@@ -121,6 +121,8 @@ Let's now focus on what the quotes tell us about these newspapers.
 
 - Next, we can look deeper and see which words have the highest score for each newspaper. The more relevant a word is, the more carefully it was used, certainly to support a specific topic. The most relevant words used by InsideClimateNews are mostly words directly related to climate change, while Breitbart's are mostly more general words. For example, the most relevant word for InsideClimateNews is **'epa'**, which is the US Environmental Protection Agency. We show below most relevent words into word clouds.
 
+<image src="assets/images/merged_word_clouds.jpg" alt="Word clouds illustration"/>
+
 - We can therefore conclude that the quotes relayed by InsideClimateNews are more **qualitative** and the words used are more precisely chosen. This complements what we have seen previously, namely that Breitbart reuse many of the same quotes.
 
 - However, it should be noted that this analysis is based on quotes filtered only on the word climate, and it does not mean that 100% of them are related to climate change. That is why words like 'women' or 'family' also stand out.
