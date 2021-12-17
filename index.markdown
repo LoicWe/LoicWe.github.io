@@ -157,12 +157,12 @@ After a little rewind about the history of climate change of these past years we
 
 - February 2015 : Goldenberg, S. & Roberts, D. Obama rejects Keystone XL pipeline and hails US as leader on climate change. The Guardian (2015).
 - May 2015 : Gambino, L. Barack Obama: climate deniers pose serious threat to US security. The Guardian (2015).
-- August 2015 : 2015 State of the Climate: Sea Level NOAA Climate.gov. (https://www.climate.gov/news-features/featured-images/2015-state-climate-sea-level)[https://www.climate.gov/news-features/featured-images/2015-state-climate-sea-level].
-- December 2015 : World Climate Summit 2015. Cop21 (https://cop21.org/)[https://cop21.org/].
+- August 2015 : 2015 State of the Climate: Sea Level NOAA Climate.gov. [https://www.climate.gov/news-features/featured-images/2015-state-climate-sea-level](https://www.climate.gov/news-features/featured-images/2015-state-climate-sea-level).
+- December 2015 : World Climate Summit 2015. Cop21 [https://cop21.org/](https://cop21.org/).
 - March 2016 : Trans-Pacific Partnership. Wikipedia (2021).
 - April 2016 : Quotebank quote
-- June 2017 : Statement by President Trump on the Paris Climate Accord – The White House. (https://trumpwhitehouse.archives.gov/briefings-statements/statement-president-trump-paris-climate-accord/)[https://trumpwhitehouse.archives.gov/briefings-statements/statement-president-trump-paris-climate-accord/].
-- March 2018 : International Solar Alliance and India - OBJECTIVE IAS. (https://objectiveias.in/international-solar-alliance-and-india/)[https://objectiveias.in/international-solar-alliance-and-india/] (2018).
+- June 2017 : Statement by President Trump on the Paris Climate Accord – The White House. [https://trumpwhitehouse.archives.gov/briefings-statements/statement-president-trump-paris-climate-accord/](https://trumpwhitehouse.archives.gov/briefings-statements/statement-president-trump-paris-climate-accord/).
+- March 2018 : International Solar Alliance and India - OBJECTIVE IAS. [https://objectiveias.in/international-solar-alliance-and-india/](https://objectiveias.in/international-solar-alliance-and-india/) (2018).
 - August 2018 : 2018 California wildfires. Wikipedia (2021).
 - March 2019 : School Strike for Climate. Wikipedia (2021).
 - August 2019 : 2019 Amazon rainforest wildfires. Wikipedia (2021).
