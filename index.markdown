@@ -6,6 +6,8 @@ layout: home
 title: Let’s rewind the climate history 
 ---
 
+{% include title.html %}
+
 ## Abstract
 
 Since 2015 and the **Paris Agreements** following the COP21, states and citizens are taking the issue of **climate change** more and more seriously. This has led to strong political movements like the **climate strikes** initiated by Swedish activist Greta Thunberg. The goal of our project is to **rewind the story of climate change** through the quotes of multiple newspapers. 
