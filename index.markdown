@@ -153,29 +153,18 @@ Now, we can have a review about **speakers** in Breitbart and InsideClimateNews 
 After a little rewind about the history of climate change of these past years we were interested in looking at who was behind that story. We then focused on two newspapers that we thought interesting as they have a totally different opinion regarding climate change. The pro climate newspaper uses more **unique** quotes, whose quotes are more **relevant** and more related to climate change in their articles and whose speakers are politically **diversified**. Also, the climate sceptic newspapers cluster all share the same quotes and are not very diversified.
 
 
-[^1]# Bibliography 
+# Bibliography
 
-February 2015 : Goldenberg, S. & Roberts, D. Obama rejects Keystone XL pipeline and hails US as leader on climate change. The Guardian (2015).
-May 2015 : Gambino, L. Barack Obama: climate deniers pose serious threat to US security. The Guardian (2015).
-August 2015 : 2015 State of the Climate: Sea Level | NOAA Climate.gov. https://www.climate.gov/news-features/featured-images/2015-state-climate-sea-level.
-December 2015 : World Climate Summit 2015. Cop21 https://cop21.org/.
-March 2016 : Trans-Pacific Partnership. Wikipedia (2021).
-April 2016 : Quotebank quote
-June 2017 : Statement by President Trump on the Paris Climate Accord – The White House. https://trumpwhitehouse.archives.gov/briefings-statements/statement-president-trump-paris-climate-accord/.
-March 2018 : International Solar Alliance and India - OBJECTIVE IAS. https://objectiveias.in/international-solar-alliance-and-india/ (2018).
-August 2018 : 2018 California wildfires. Wikipedia (2021).
-March 2019 : School Strike for Climate. Wikipedia (2021).
-August 2019 : 2019 Amazon rainforest wildfires. Wikipedia (2021).
-September 2019 : September 2019 climate strikes. Wikipedia (2021).
-January 2020 : 2019–20 Australian bushfire season. Wikipedia (2021).
-
-
-
-
-
-
-
-
-
-
-
+- February 2015 : Goldenberg, S. & Roberts, D. Obama rejects Keystone XL pipeline and hails US as leader on climate change. The Guardian (2015).
+- May 2015 : Gambino, L. Barack Obama: climate deniers pose serious threat to US security. The Guardian (2015).
+- August 2015 : 2015 State of the Climate: Sea Level NOAA Climate.gov. ()[https://www.climate.gov/news-features/featured-images/2015-state-climate-sea-level].
+- December 2015 : World Climate Summit 2015. Cop21 ()[https://cop21.org/].
+- March 2016 : Trans-Pacific Partnership. Wikipedia (2021).
+- April 2016 : Quotebank quote
+- June 2017 : Statement by President Trump on the Paris Climate Accord – The White House. ()[https://trumpwhitehouse.archives.gov/briefings-statements/statement-president-trump-paris-climate-accord/].
+- March 2018 : International Solar Alliance and India - OBJECTIVE IAS. ()[https://objectiveias.in/international-solar-alliance-and-india/] (2018).
+- August 2018 : 2018 California wildfires. Wikipedia (2021).
+- March 2019 : School Strike for Climate. Wikipedia (2021).
+- August 2019 : 2019 Amazon rainforest wildfires. Wikipedia (2021).
+- September 2019 : September 2019 climate strikes. Wikipedia (2021).
+- January 2020 : 2019–20 Australian bushfire season. Wikipedia (2021).
