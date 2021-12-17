@@ -26,7 +26,7 @@ In 2016 there are only a few quotes due to the fact that the original dataset ha
 
 ## The quotes’ story
 
-We can now try to retrace the **history of climate change** viewed by the quotes. To do so, a typical language processing task will be solved :  **topic detection**. We represented the topic of each month in word clouds of 20 words and then tried to connect these words to an **event** that happened that month. The size of the word is proportional to the degree to which the month’s quotes represent that particular topic. The **timeline** below shows the results of our unsupervised learning. [^1]
+We can now try to retrace the **history of climate change** viewed by the quotes. To do so, a typical language processing task will be solved :  **topic detection**. We represented the topic of each month in word clouds of 20 words and then tried to connect these words to an **event** that happened that month. The size of the word is proportional to the degree to which the month’s quotes represent that particular topic. The **timeline** below shows the results of our unsupervised learning.
 
 {% include timeline.html %}
 
