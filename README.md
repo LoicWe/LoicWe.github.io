@@ -1,6 +1,6 @@
 ---
 # Let's rewind Climate History
-A data story to discover [here](https://ph0tonic.github.io/ada2021/)
+A data story to discover [here](https://weloic.github.io/)
 
 ## On localhost
 To run jekyll :
