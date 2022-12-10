@@ -21,12 +21,11 @@ We will first be interested in identifying what the quotes reveal about the impo
     <script src="//unpkg.com/three"></script>
     <script src="//unpkg.com/three-spritetext"></script>
     <script src="//unpkg.com/3d-force-graph"></script>
-    <script src="//unpkg.com/dat.gui"></script>
     <!--<script src="../../dist/3d-force-graph.js"></script>-->
     <div id="3d-graph">
-    <script type="text/javascript" src="/3d-JS-Network/graph_title.js"></script>
+    <script type="text/javascript" src="/3d-JS-Network/graph_cmu.js"></script>
     </div>
-  </div>
+ </div>
 
 <a href="3d-JS-Network/graph_title_final.html">Click Here for Full Screen And Interactive Data Viz</a>
 

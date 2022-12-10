@@ -22,10 +22,10 @@ title:
 #email: your-email@example.com
 description: A data story brought to you by Bastien Wermeille, Cécile Chavane, Marguerite Fauroux & Théophile Paturle.
 
-baseurl: "/ada2021" # the subpath of your site, e.g. /blog
-url: "https://ph0tonic.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://weloic.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: ""
-#github_username:  Ph0tonic
+#github_username:  weloic
 
 # Build settings
 theme: minima
