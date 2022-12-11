@@ -35,11 +35,19 @@ const communityColor = {
   '19' : 'mocha',
 }
 
+function color_nodes(node){
+  var color='gray'
+  if (node['community'] < 20){
+    color = communityColor[node['community']]
+  }
+  return color;
+}
+
 // controls
 
 graph(document.getElementById('3d-graph'))
-  .jsonUrl('3d-JS-Network/datasets/graph_20_com_complete_communities.json')
-  .nodeColor(node => communityColor[node['community']])
+  .jsonUrl('/3d-JS-Network/datasets/graph_complete_communities.json')
+  .nodeColor(n => color_nodes(n))
   .nodeRelSize(15)
 
 // Nodes
@@ -62,5 +70,15 @@ graph(document.getElementById('3d-graph'))
   //.linkDirectionalParticleWidth(d => d.value*0.05)     //Width of the particles
   // .linkDirectionalParticleSpeed(d => d.value * 0.001); //Speed of the particles;
 
-graph.width([730])
+//legend
+
+var d3svg = d3.select("#leg").append('svg');
+d3svg.attr('width', 768);
+d3svg.attr('height', 200);
+d3svg.style('background-color', 'black');
+var top_svg = d3svg.append('g');
+top_svg.append('g').attr('id','gleg');
+
+
+
 graph.height([600])

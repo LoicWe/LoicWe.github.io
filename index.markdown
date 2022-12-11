@@ -27,7 +27,7 @@ We will first be interested in identifying what the quotes reveal about the impo
     </div>
  </div>
 
-<a href="3d-JS-Network/graph_title_final.html">Click Here for Full Screen And Interactive Data Viz</a>
+<a href="3d-JS-Network/graph_complete.html">Click Here for Full Screen And Interactive Data Viz</a>
 
 
 ## A little overview
