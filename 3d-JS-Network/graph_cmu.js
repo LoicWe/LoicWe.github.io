@@ -1,17 +1,5 @@
 const graph = ForceGraph3D()
 
-
-const communityColor2 = {
-  '0' : 'blue',
-  '1' : 'green',
-  '2' : 'purple',
-  '3' : 'yellow',
-  '4' : 'orange',
-  '5' : 'red',
-  '6' : 'darkgreen',
-}
-
-
 const communityColor = {
   '0' : 'blue',
   '1' : 'green',
@@ -39,28 +27,20 @@ const communityColor = {
 
 graph(document.getElementById('3d-graph'))
   .jsonUrl('3d-JS-Network/datasets/graph_20_com_complete_communities.json')
-  .nodeColor(node => communityColor[node['community']])
+  //.nodeColor(node => communityColor[node['community']])
+  .nodeAutoColorBy('community')
   .nodeRelSize(15)
 
 // Nodes
-  .nodeLabel('name') //when on the node shows id
-  //.nodeLabel(node => `${node.id}:
-  //   ${node.gender?node.gender : 'unknown gender'},`) //when on the node shows id: country
-
+  .nodeLabel(node => `${node.name}:
+     community ${node.community}, 
+     ${node.gender?node.gender : 'unknown gender'}`)
 
 // Links
-  // .linkLabel(n => n.newssites[0])
   .linkOpacity(0.2)
+  //.linkLabel('Number_of_common_movies')
 
-  //Arrows + Curve
-  // .linkDirectionalArrowLength(5)
-  // .linkDirectionalArrowRelPos(1) //value = 0, arrow close to the source | value = 1, arrow close to the target
-  // .linkCurvature(0.25)
-  
-  //Moving particles on links ; speed of moving proportionnal to weight of edge
-  // .linkWidth(n => Math.log(n.value))                  //Nbr of the particles
-  //.linkDirectionalParticleWidth(d => d.value*0.05)     //Width of the particles
-  // .linkDirectionalParticleSpeed(d => d.value * 0.001); //Speed of the particles;
 
+graph.backgroundColor('black')
 graph.width([730])
 graph.height([600])
