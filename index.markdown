@@ -10,9 +10,7 @@ title:
 
 ## Abstract
 
-Since 2015 and the **Paris Agreements** following the COP21, states and citizens are taking the issue of **climate change** more and more seriously. This has led to strong political movements like the **climate strikes** initiated by Swedish activist Greta Thunberg. The goal of our project is to **rewind the story of climate change** through the quotes of multiple newspapers. 
-
-We will first be interested in identifying what the quotes reveal about the important **events** related to climate change. Then we will dig into the **actors** behind the quotes. We will ask ourseleves if the important **newspapers** talking about climate change are mostly for a sustainable change or are rather climate sceptics.  A focus will be made also on the most important **political opinions** of the speakers in the quotes. Finally, these analyses will allow us to have a global overview of how and about what Quotebank quotes talk about regarding climate change.
+This it a test
 
 ## Graph viz test
 
