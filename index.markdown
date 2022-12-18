@@ -8,8 +8,6 @@ title:
 
 {% include title.html %}
 
-# Title : A Century of Cinematography : An actors and movies network analysis
-
 Since what is considered as the first commercial cinematographic projection by Les Frères Lumière in Paris, December 1895, the movie industry has grown to be worth several tens of billions dollars. Dozens of studios were created, producing an increasing number of movies each year. Today, several thousands of movies are released worldwide each year and they represent an unnegligable cultural vector. Movies are an important instrument in the soft power toolbox. Thus, we came to ask ourselves this burning question: what is the influence of the movie industry around the world? 
 
 Of course that is too grand a question to be answered with the tap of a finger. But nonetheless, we can try to focus on specific aspects of the movie industry, such as actors. Here’s our attempt to collect some nuggets of information about the world of movies and actors in it.
@@ -25,7 +23,7 @@ Once we have our network, we can cluster actors in communities of strongly-relat
 
 ### An overlook
 
-After epics battles with Python, we finally won against the beast and managed to compute our network and communities. Here it is!
+After epics battles with Python, we finally outsmarted the beast and managed to compute our network and communities. Here it is!
 
  <div id="graph1">
     <style> body { margin: 0; } </style>
@@ -58,7 +56,7 @@ For the rest of this analysis, we will only investigate the 20 main communities,
 
 To analyse the communities, we will look at the actors contained within the community but also the movies represented within the community. A movie is considered as part of a community if at least two actors within the community have played in the movie. This means that a single movie can be part of multiple communities.
 
-/images
+{% include movies_community_scatter.html.html %}
 
 ### Communities
 
