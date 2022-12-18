@@ -50,7 +50,7 @@ Number of edges:  25865*
 
 It stars 645 communities in total, ranging from 1003 to 2 individuals. The community sizes distribution follows a power-law distribution and only the 14 widest communities contain more than a hundred actors.
 
-/image
+{% include community_sizes_scatter.html %}
 
 From the interactive visualisation above, it seems that the bigger communities present interconnections with each other, while the all the smallest ones are satellites completely isolated from the center of the pack. Those small satellites probably each concern only one movie and its actors and are disconnected from the mainstream movie industy. 
 
