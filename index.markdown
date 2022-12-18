@@ -8,11 +8,24 @@ title:
 
 {% include title.html %}
 
-## Abstract
+# Title : A Century of Cinematography : An actors and movies network analysis
 
-This it a test
+Since what is considered as the first commercial cinematographic projection by Les Frères Lumière in Paris, December 1895, the movie industry has grown to be worth several tens of billions dollars. Dozens of studios were created, producing an increasing number of movies each year. Today, several thousands of movies are released worldwide each year and they represent an unnegligable cultural vector. Movies are an important instrument in the soft power toolbox. Thus, we came to ask ourselves this burning question: what is the influence of the movie industry around the world? 
 
-## Graph viz test
+Of course that is too grand a question to be answered with the tap of a finger. But nonetheless, we can try to focus on specific aspects of the movie industry, such as actors. Here’s our attempt to collect some nuggets of information about the world of movies and actors in it.
+
+## How?
+At our disposition, we have an already existing dataset concerning only actors and movies : the **CMU Movie Summary Corpus** (citation). We will try to make the most out of it to get a little information on the movie industry through the lens of actors!
+
+Provided with this information, we excavate an underpinning structure of the movies’ world. We draw a sort of *Facebook of actors* where actors are *friends* if they played in one or several movies together.
+
+Once we have our network, we can cluster actors in communities of strongly-related individuals using the Louvain algorithm. Then, the computed communities can be characterized to understand who gets to access the wider communities, how interconnected the communities are and lots of other fascinating questions. With the initial corpus, we got information on actors date of birth, movies they played in, genres, languages and countries of movies. To have a better understanding of the main communities, we decided to scrape additionnal information such as actors nationality and occupations. However, as scraping is a very time-consuming task, we decided to only apply it on the 20 most populated communities. 
+
+## The Network and Communities
+
+### An overlook
+
+After epics battles with Python, we finally won against the beast and managed to compute our network and communities. Here it is!
 
  <div id="graph1">
     <style> body { margin: 0; } </style>
@@ -28,7 +41,31 @@ This it a test
 <a href="3d-JS-Network/graph_complete.html">Click Here for Full Screen And Interactive Data Viz</a>
 
 
-## A little overview
+The network data includes 8 427 actors who played overall in xxxxx(less than 81 741 and more than 27 242) movies. 
+
+As is usual in most real-world networks, the network is very sparse. Only 0.03% of all possible links between actors are present.  
+
+*Number of nodes:  8427 <br />
+Number of edges:  25865*
+
+It stars 645 communities in total, ranging from 1003 to 2 individuals. The community sizes distribution follows a power-law distribution and only the 14 widest communities contain more than a hundred actors.
+
+/image
+
+From the interactive visualisation above, it seems that the bigger communities present interconnections with each other, while the all the smallest ones are satellites completely isolated from the center of the pack. Those small satellites probably each concern only one movie and its actors and are disconnected from the mainstream movie industy. 
+
+For the rest of this analysis, we will only investigate the 20 main communities, as those were the ones we fetched additionnal data for. The 20 most populated communities add up to a total of 6172 actors (73% of the total number of actors in the network) who played in 27 242 movies (33% of the total number of movies included in the CMU dataset).
+
+To analyse the communities, we will look at the actors contained within the community but also the movies represented within the community. A movie is considered as part of a community if at least two actors within the community have played in the movie. This means that a single movie can be part of multiple communities.
+
+/images
+
+### Communities
+
+Let’s take a quick look at some of the most populated communities:
+
+
+## TBF
 
 We can first see the distribution of the number of occurrences of climate quotes through the years of 2015 to 2020. The distribution presents an **irregular pattern**, we can see that some months have a lot of quotes, mostly due to very famous ones like the one of President Donald Trump in august 2017 when he responded to North Korea’s nuclear threats saying that the regime
 
