@@ -56,7 +56,7 @@ For the rest of this analysis, we will only investigate the 20 main communities,
 
 To analyse the communities, we will look at the actors contained within the community but also the movies represented within the community. A movie is considered as part of a community if at least two actors within the community have played in the movie. This means that a single movie can be part of multiple communities.
 
-{% include movies_community_scatter.html.html %}
+{% include movies_community_scatter.html %}
 
 ### Communities
 
