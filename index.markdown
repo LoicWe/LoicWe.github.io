@@ -56,11 +56,28 @@ For the rest of this analysis, we will only investigate the 20 main communities,
 
 To analyse the communities, we will look at the actors contained within the community but also the movies represented within the community. A movie is considered as part of a community if at least two actors within the community have played in the movie. This means that a single movie can be part of multiple communities.
 
-{% include movies_community_scatter.html.html %}
+{% include movies_community_scatter.html %}
 
-### Communities
+### Inside the communities
 
 Let’s take a quick look at some of the most populated communities:
+
+{% include top20_characterisation.html %}
+
+Concerning **gender**, all of them contains more male than female actors, which is sadly not very suprising. We send our greatest congratulations to the 18th community which achieves the higher parity within its ranks (48% female and 52% male actors). 
+
+Concerning **nationality**, at least 50% of the actors in each community come from the same country. It would seem that communities are very homogeneous over actor’s nationalities. 10 communities out of the 20 comprise a majority of american actors (more than 70%). Interestingely, there are 3 very homogeneous communities comprising more than 95% of indian actors (community 3,5 and 10). The community 12 presents a sligthly more even distribution between its 3 most recurrent nationalities (France 55%, Italy 30%, Portugal 5%).
+
+Concerning **occupation**, the three most recurring occupations concern less than half of each community’s population. Thus, communities as less homogeneous over occupations than over nationality. 
+
+### Communities intra and interrelationships
+
+11 et 14 not connected to any other
+
+3,5,10 ensemble 
+
+les 15 restantes tous ensemble
+
 
 
 ## TBF
