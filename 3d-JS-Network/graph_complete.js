@@ -16,7 +16,7 @@ const communityColor = {
   '12' : 'strawberry',
   '13' : 'fluorescentgreen',
   '14' : 'bamboo',
-  '15' : 'armybrown',
+  '15' : 'white',
   '16' : 'rust',
   '17' : 'magenta',
   '18' : 'mauve',
@@ -24,7 +24,7 @@ const communityColor = {
 }
 
 function color_nodes(node){
-  var color='gray'
+  const color='gray'
   if (node['community'] < 20){
     color = communityColor[node['community']]
   }
@@ -35,10 +35,8 @@ function color_nodes(node){
 
 graph(document.getElementById('3d-graph'))
   .jsonUrl('/3d-JS-Network/datasets/graph_complete_communities.json')
-  .nodeColor(n => color_nodes(n))
   .nodeRelSize(15)
-
-// Nodes
+  .nodeColor(n => color_nodes(n))
   .nodeLabel(node => `${node.name}:
   community ${node.community}, 
   ${node.gender?node.gender : 'unknown gender'}`)
@@ -76,4 +74,4 @@ top_svg.append('g').attr('id','gleg');
 
 
 graph.backgroundColor('black')
-graph.height([600])
+graph.height([800])
