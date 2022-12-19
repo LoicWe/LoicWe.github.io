@@ -25,7 +25,7 @@ const communityColor = {
 
 // controls
 
-graph(document.getElementById('3d-graph'))
+graph(document.getElementById('3d-graph-1'))
   .jsonUrl('3d-JS-Network/datasets/graph_20_com_complete_communities.json')
   //.nodeColor(node => communityColor[node['community']])
   .nodeAutoColorBy('community')

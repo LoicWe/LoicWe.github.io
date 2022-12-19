@@ -14,20 +14,36 @@ Since 2015 and the **Paris Agreements** following the COP21, states and citizens
 
 We will first be interested in identifying what the quotes reveal about the important **events** related to climate change. Then we will dig into the **actors** behind the quotes. We will ask ourseleves if the important **newspapers** talking about climate change are mostly for a sustainable change or are rather climate sceptics.  A focus will be made also on the most important **political opinions** of the speakers in the quotes. Finally, these analyses will allow us to have a global overview of how and about what Quotebank quotes talk about regarding climate change.
 
+
 ## Graph viz test
 
- <div id="graph1">
+ <div id="graph-1">
     <style> body { margin: 0; } </style>
     <script src="//unpkg.com/three"></script>
     <script src="//unpkg.com/three-spritetext"></script>
     <script src="//unpkg.com/3d-force-graph"></script>
-    <!--<script src="../../dist/3d-force-graph.js"></script>-->
-    <div id="3d-graph">
-    <script type="text/javascript" src="/3d-JS-Network/graph_cmu.js"></script>
+    <div id="3d-graph-1">
+        <script type="text/javascript" src="/3d-JS-Network/graph_cmu.js"></script>
     </div>
  </div>
 
 <a href="3d-JS-Network/graph_complete.html">Click Here for Full Screen And Interactive Data Viz</a>
+
+
+## Graph of communities
+
+
+ <div id="graph-2">
+    <style> body { margin: 0; } </style>
+    <!--
+    <script src="//unpkg.com/three"></script>
+    <script src="//unpkg.com/three-spritetext"></script>
+    <script src="//unpkg.com/3d-force-graph"></script>
+    -->
+    <div id="3d-graph-2">
+        <script type="text/javascript" src="/3d-JS-Network/graph_com.js"></script>
+    </div>
+ </div>
 
 
 ## A little overview
