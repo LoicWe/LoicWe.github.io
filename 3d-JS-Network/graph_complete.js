@@ -62,9 +62,17 @@ const colorMode = {
 const createStatefullColorMapper = () => {
   let mode = colorMode.COMMUNITY;
   let communityFilter = {};
+  let minYear = 1900;
+  let maxYear = 2023;
   return {
     setCommunityFilter: (community, visible) => {
       communityFilter[community] = visible;
+    },
+    setMinRange: (value) => {
+      minYear = value;
+    },
+    setMaxRange: (value) => {
+      maxYear = value;
     },
     setMode: (m) => {
       mode = m;
@@ -73,6 +81,9 @@ const createStatefullColorMapper = () => {
       return mode;
     },
     color: (node) => {
+      if ((minYear != 1900 || maxYear != 2023) && (node.year < minYear || node.year > maxYear || node.year == NaN)) {
+        return 'gray';
+      }
       switch (mode) {
         case colorMode.COMMUNITY:
           return (communityFilter[node.community] ?? true) ? (communityColor[node.community] ?? 'gray'): 'gray';
@@ -87,40 +98,13 @@ const createStatefullColorMapper = () => {
   }
 }
 
-const createStatefullFilter = () => {
-  const filters = {};
-  let min = 1900;
-  let max = 2023;
-  return {
-    filterData: (data) => {
-      const nodes = data.nodes.filter(n => filters[n.community] ?? true)
-      const nodeIds = new Set(nodes.map(n => n.id));
-      const links = data.links.filter(l => nodeIds.has(l.source) && nodeIds.has(l.target))
-
-      return { ...data, nodes, links }
-    },
-    filterNode: (node) => {
-      return filters[node.community] ?? false;
-    },
-    setFilter: (community, display) => {
-      filters[community] = display
-    },
-    setMinRange: (value) => {
-      min = value;
-    },
-    setMaxRange: (value) => {
-      max = value;
-    },
-  }
-}
-
-const buildGraph = (data, filter, colorMapper) => {
+const buildGraph = (data, colorMapper) => {
   graph(document.getElementById('3d-graph'))
     .nodeRelSize(15)
     .nodeColor((node) => colorMapper.color(node))
-    .nodeLabel(node => filter.filterNode(node) ? `${node.name}:
+    .nodeLabel(node => `${node.name}:
   community ${node.community}, 
-  ${node.gender ? node.gender : 'unknown gender'}` : '')
+  ${node.gender ? node.gender : 'unknown gender'}`)
     .onNodeClick(node => {
       // Aim at node from outside it
       const distance = 100;
@@ -211,27 +195,26 @@ const buildColorSelectors = (g, colorMapper, data) => {
   return data;
 }
 
-const buildRangeSelectors = (g, filter, data) => {
+const buildRangeSelectors = (g, colorMapper, data) => {
   const minSelector = document.getElementById('fromSlider');
   const maxSelector = document.getElementById('toSlider');
 
   minSelector.addEventListener('input', (event) => {
-    filter.setMinRange(event.target.value);
-    g.nodeVisibility(filter.filterNode);
+    colorMapper.setMinRange(event.target.value);
+    g.nodeColor(colorMapper.color);
   })
   maxSelector.addEventListener('input', (event) => {
-    filter.setMaxRange(event.target.value);
-    g.nodeVisibility(filter.filterNode);
+    colorMapper.setMaxRange(event.target.value);
+    g.nodeColor(colorMapper.color);
   })
 
   return data;
 }
 
-const filter = createStatefullFilter();
 const colorMapper = createStatefullColorMapper();
 fetch('/3d-JS-Network/datasets/graph_complete_communities.json')
   .then(response => response.json())
-  .then((data) => buildLabelSelectors(graph, filter, data))
+  .then((data) => buildLabelSelectors(graph, colorMapper, data))
   .then((data) => buildColorSelectors(graph, colorMapper, data))
-  .then((data) => buildRangeSelectors(graph, filter, data))
-  .then((data) => buildGraph(data, filter, colorMapper))
+  .then((data) => buildRangeSelectors(graph, colorMapper, data))
+  .then((data) => buildGraph(data, colorMapper))
