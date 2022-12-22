@@ -62,8 +62,8 @@ const colorMode = {
 const createStatefullColorMapper = () => {
   let mode = colorMode.COMMUNITY;
   let communityFilter = {};
-  let minYear = 1900;
-  let maxYear = 2023;
+  let minYear = 1804;
+  let maxYear = 2011;
   return {
     setCommunityFilter: (community, visible) => {
       communityFilter[community] = visible;
@@ -81,7 +81,7 @@ const createStatefullColorMapper = () => {
       return mode;
     },
     color: (node) => {
-      if ((minYear != 1900 || maxYear != 2023) && (node.year < minYear || node.year > maxYear || node.year == NaN)) {
+      if ((minYear != 1804 || maxYear != 2011) && (node.year < minYear || node.year > maxYear || node.year == NaN)) {
         return 'gray';
       }
       switch (mode) {
