@@ -11,7 +11,8 @@ graph_com(document.getElementById('3d-graph-2'))
 
 // Links
   .linkOpacity(0.2)
-  .linkLabel('Number_of_common_movies');
+  .linkLabel('Number_of_common_movies')
+  .linkWidth('count');
 
 
 graph_com.backgroundColor('black')

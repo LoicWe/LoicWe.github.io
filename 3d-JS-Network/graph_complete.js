@@ -75,7 +75,7 @@ const createStatefullColorMapper = () => {
         case colorMode.GENDER:
           return genderColor[node.gender] ?? 'gray';
         case colorMode.NATIONALITY:
-          return nationalityColor[node.country] ?? 'gray';
+          return nationalityColor[node.nationality] ?? 'gray';
         default:
           return 'green'
       }
