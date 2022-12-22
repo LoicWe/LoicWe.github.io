@@ -5,14 +5,31 @@ const graph_com = ForceGraph3D()
 graph_com(document.getElementById('3d-graph-2'))
   .jsonUrl('3d-JS-Network/datasets/graph_communities.json')
   .nodeAutoColorBy('id')
+  .onNodeClick(node => {
+    // Aim at node from outside it
+    const distance = 100;
+    const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
+
+    const newPos = node.x || node.y || node.z
+      ? { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }
+      : { x: 0, y: 0, z: distance }; // special case if node is in (0,0,0)
+
+      graph_com.cameraPosition(
+      newPos, // new position
+      node, // lookAt ({ x, y, z })
+      3000  // ms transition duration
+    );
+  })
 
 // Nodes
-  .nodeLabel('id')
+  .nodeLabel(node => `community ${node.id}, number of intra-relations: ${node.intra}`)
+  //.nodeRelSize(6)
+  .nodeVal(node => node.intra/100)
 
 // Links
-  .linkOpacity(0.2)
-  .linkLabel('Number_of_common_movies')
-  .linkWidth('count');
+  .linkOpacity(0.5)
+  .linkLabel(node => `number of inter-relations: ${node.count}`)
+  .linkWidth(node => (node.count / 242 * 15));
 
 
 graph_com.backgroundColor('black')
