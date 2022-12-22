@@ -106,13 +106,7 @@ Let's take a look at the distribution over time of the movies produced in each c
 
 Not so much difference here either. We can however note that the Indian movie Industy has a predilection for Drama over Comedy. Half of the movies in each communities are labelled as dramas whereas less than 15 % are labelled as comedies.
 
-<figure>
-   <a href="https://jekyllrb.com">
-   <img src="india_genre.png" style="max-width: 200px;"
-      alt="India language" />
-   </a>
-   <figcaption>This is the Jekyll logo</figcaption>
-</figure>
+{% include india_genre.html %}
 
 Another interesting discovery: the Bollywood label is not evenly distributed over the 3 communities. That's something to look into ! After a quick research on Wikipedia, one can learn that the term 'Bollywood' refers to Hindi cinema, that is the part of the Indian industry that produces movies in Hindi language. Did you know that the Republic of India had 22 scheduled languages in its Constitution? 
 
@@ -120,13 +114,7 @@ Another interesting discovery: the Bollywood label is not evenly distributed ove
 
 Luckily, our dataset provides us with data on languages in which a movie is produced. Bingo ! The 3 communities seem to have different main languages.
 
-<figure>
-   <a href="https://jekyllrb.com">
-   <img src="india_language.png" style="max-width: 200px;"
-      alt="India language" />
-   </a>
-   <figcaption>This is the Jekyll logo</figcaption>
-</figure>
+{% include india_language.html %}
 
 The first one, community 3, mainly contains movies produced in Hindi language (79%). This is consistent with the 'Bollywood' label that we noticed earlier. The main 3 actors of this community (i.e. the most connected ones) are Shakti Kapoor, Amitabh Bachchan, Mithun Chakraborty. A quick journey on their personnal Wikipedia page confirms that we are dealing with the **Bollywood community**. Bollywood is indeed considered as the major sector within Indian Cinema.
 
