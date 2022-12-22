@@ -61,7 +61,11 @@ const colorMode = {
 // Will return a statfull color mapper object
 const createStatefullColorMapper = () => {
   let mode = colorMode.COMMUNITY;
+  let communityFilter = {};
   return {
+    setCommunityFilter: (community, visible) => {
+      communityFilter[community] = visible;
+    },
     setMode: (m) => {
       mode = m;
     },
@@ -71,7 +75,7 @@ const createStatefullColorMapper = () => {
     color: (node) => {
       switch (mode) {
         case colorMode.COMMUNITY:
-          return communityColor[node.community] ?? 'gray';
+          return (communityFilter[node.community] ?? true) ? (communityColor[node.community] ?? 'gray'): 'gray';
         case colorMode.GENDER:
           return genderColor[node.gender] ?? 'gray';
         case colorMode.NATIONALITY:
@@ -131,7 +135,7 @@ const buildGraph = (data, filter, colorMapper) => {
         node // lookAt ({ x, y, z })
       );
     })
-    .linkLabel('Number_of_common_movies')
+    .linkLabel(node => `number of common movies: ${node.Number_of_common_movies}`)
     .linkOpacity(0.2)
     .backgroundColor('black')
     .height([800])
@@ -142,7 +146,7 @@ const updateGraph = (g, data) => {
   g.graphData(data);
 }
 
-const buildLabelSelectors = (g, filter, data) => {
+const buildLabelSelectors = (g, colorMapper, data) => {
   const communities = new Set(data.nodes.map((n) => n.community))
 
   const selectors = document.getElementById('label-selectors');
@@ -162,9 +166,8 @@ const buildLabelSelectors = (g, filter, data) => {
       input.setAttribute('type', 'checkbox')
       input.setAttribute('checked', true)
       input.addEventListener('change', (event) => {
-        filter.setFilter(community, event.target.checked);
-        // Uncomment following line to hide part of the data
-        // g.nodeVisibility(filter.filterNode);
+        colorMapper.setCommunityFilter(community, event.target.checked);
+        g.nodeColor(colorMapper.color);
       })
 
       li.appendChild(input)
