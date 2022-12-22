@@ -28,6 +28,7 @@ const communityColor = {
 graph(document.getElementById('3d-graph-1'))
   .jsonUrl('3d-JS-Network/datasets/graph_20_com_complete_communities.json')
   //.nodeColor(node => communityColor[node['community']])
+  .cameraPosition([{x: -3000, y: -100, z: 1000 }])
   .nodeAutoColorBy('community')
   .nodeRelSize(15)
 
@@ -37,7 +38,7 @@ graph(document.getElementById('3d-graph-1'))
      ${node.gender?node.gender : 'unknown gender'}`)
 
 // Links
-  .linkOpacity(0.2)
+  .linkOpacity(0.2);
   //.linkLabel('Number_of_common_movies')
 
 

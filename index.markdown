@@ -25,6 +25,7 @@ Once we have our network, we can cluster actors in communities of strongly-relat
 
 After epics battles with Python, we finally outsmarted the beast and managed to compute our network and communities. Here it is!
 
+
  <div id="graph-1">
     <style> body { margin: 0; } </style>
     <script src="//unpkg.com/three"></script>
@@ -43,11 +44,6 @@ After epics battles with Python, we finally outsmarted the beast and managed to 
 
  <div id="graph-2">
     <style> body { margin: 0; } </style>
-    <!--
-    <script src="//unpkg.com/three"></script>
-    <script src="//unpkg.com/three-spritetext"></script>
-    <script src="//unpkg.com/3d-force-graph"></script>
-    -->
     <div id="3d-graph-2">
         <script type="text/javascript" src="/3d-JS-Network/graph_com.js"></script>
     </div>

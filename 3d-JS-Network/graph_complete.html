@@ -1,32 +1,242 @@
 <head>
-    <style> body { margin: 0; position: absolute; overflow-y: scroll; } </style>
-    <style> .legend {
+  <style>
+    body {
+      margin: 0;
+      position: absolute;
+      overflow-y: scroll;
+    }
+  </style>
+  <style>
+    .legend {
       /* float: right;
       margin-right: 15px; */
 
       background-color: black;
+      width: 100vw;
+      height: 500px;
     }
-    </style> 
-    <style>html { overflow-y: scroll; }</style>
+  </style>
+  <style>
+    html {
+      overflow-y: scroll;
+    }
+  </style>
 
-    <meta charset="UTF-8">
+  <meta charset="UTF-8" />
 
-    <script src="//unpkg.com/three"></script>
-    <script src="//unpkg.com/three-spritetext"></script>
-    <script src="//unpkg.com/d3"></script>
-  
-    <script src="//unpkg.com/3d-force-graph"></script>
+  <script src="//unpkg.com/three"></script>
+  <script src="//unpkg.com/three-spritetext"></script>
+  <script src="//unpkg.com/d3"></script>
 
-  </head>
-  
-  <body>
-    <div id="3d-graph"></div>
-  
+  <script src="//unpkg.com/3d-force-graph"></script>
 
-    <div id='leg' class="legend"></div>
+  <style>
+    .range_container {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: 100px auto;
+    }
 
-    <script type="text/javascript" src="/3d-JS-Network/graph_complete.js"></script>
+    .sliders_control {
+      position: relative;
+      min-height: 50px;
+    }
 
+    .form_control {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      font-size: 24px;
+      color: #635a5a;
+    }
 
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      pointer-events: all;
+      width: 24px;
+      height: 24px;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px #c6c6c6;
+      cursor: pointer;
+    }
 
-  </body>
+    input[type="range"]::-moz-range-thumb {
+      -webkit-appearance: none;
+      pointer-events: all;
+      width: 24px;
+      height: 24px;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px #c6c6c6;
+      cursor: pointer;
+    }
+
+    input[type="range"]::-webkit-slider-thumb:hover {
+      background: #f7f7f7;
+    }
+
+    input[type="range"]::-webkit-slider-thumb:active {
+      box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+      -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+    }
+
+    input[type="number"] {
+      color: #8a8383;
+      width: 50px;
+      height: 30px;
+      font-size: 20px;
+      border: none;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      opacity: 1;
+    }
+
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      background-color: #c6c6c6;
+      pointer-events: none;
+    }
+
+    #fromSlider {
+      height: 0;
+      z-index: 1;
+    }
+  </style>
+
+  <style>
+    .legend {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+    }
+
+    .legend li {
+      color: white;
+    }
+
+    .legend > div > label {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="3d-graph"></div>
+  <div class="legend">
+    <div>
+      <ul id="label-selectors"></ul>
+    </div>
+    <div>
+      <ul id="color-selectors"></ul>
+    </div>
+    <div>
+      <label>Time period</label>
+      <div class="range_container">
+        <div class="form_control">
+          <div class="form_control_container">
+            <div class="form_control_container__time">Min</div>
+            <span id="fromLabel">1900</span>
+          </div>
+          <div class="form_control_container">
+            <div class="form_control_container__time">Max</div>
+            <span id="toLabel">2022</span>
+          </div>
+        </div>
+        <div class="sliders_control">
+          <input
+            id="fromSlider"
+            type="range"
+            value="1900"
+            min="1900"
+            max="2022"
+          />
+          <input
+            id="toSlider"
+            type="range"
+            value="2022"
+            min="1900"
+            max="2022"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="leg" class="legend"></div>
+
+  <script type="text/javascript">
+    function controlFromSlider(fromSlider, toSlider, fromLabel) {
+      const [from, to] = getParsed(fromSlider, toSlider);
+      fillSlider(fromSlider, toSlider, "#C6C6C6", "#25daa5", toSlider);
+      if (from > to) {
+        fromSlider.value = to;
+        fromLabel.innerText = to;
+      } else {
+        fromLabel.innerText = from;
+      }
+    }
+
+    function controlToSlider(fromSlider, toSlider, toLabel) {
+      const [from, to] = getParsed(fromSlider, toSlider);
+      fillSlider(fromSlider, toSlider, "#C6C6C6", "#25daa5", toSlider);
+      setToggleAccessible(toSlider);
+      if (from <= to) {
+        toSlider.value = to;
+        toLabel.innerText = to;
+      } else {
+        toSlider.value = from;
+        toLabel.innerText = from;
+      }
+    }
+
+    function getParsed(currentFrom, currentTo) {
+      const from = parseInt(currentFrom.value, 10);
+      const to = parseInt(currentTo.value, 10);
+      return [from, to];
+    }
+
+    function fillSlider(from, to, sliderColor, rangeColor, controlSlider) {
+      const rangeDistance = to.max - to.min;
+      const fromPosition = from.value - to.min;
+      const toPosition = to.value - to.min;
+      controlSlider.style.background = `linear-gradient(
+      to right,
+      ${sliderColor} 0%,
+      ${sliderColor} ${(fromPosition / rangeDistance) * 100}%,
+      ${rangeColor} ${(fromPosition / rangeDistance) * 100}%,
+      ${rangeColor} ${(toPosition / rangeDistance) * 100}%, 
+      ${sliderColor} ${(toPosition / rangeDistance) * 100}%, 
+      ${sliderColor} 100%)`;
+    }
+
+    function setToggleAccessible(currentTarget) {
+      const toSlider = document.querySelector("#toSlider");
+      if (Number(currentTarget.value) <= 0) {
+        toSlider.style.zIndex = 2;
+      } else {
+        toSlider.style.zIndex = 0;
+      }
+    }
+
+    const fromSlider = document.querySelector("#fromSlider");
+    const toSlider = document.querySelector("#toSlider");
+    const fromLabel = document.querySelector("#fromLabel");
+    const toLabel = document.querySelector("#toLabel");
+    fillSlider(fromSlider, toSlider, "#C6C6C6", "#25daa5", toSlider);
+    setToggleAccessible(toSlider);
+
+    fromSlider.oninput = () =>
+      controlFromSlider(fromSlider, toSlider, fromLabel);
+    toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toLabel);
+  </script>
+  <script
+    type="text/javascript"
+    src="/3d-JS-Network/graph_complete.js"
+  ></script>
+</body>
