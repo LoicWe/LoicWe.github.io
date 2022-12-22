@@ -37,22 +37,6 @@ After epics battles with Python, we finally outsmarted the beast and managed to 
 
 <a href="3d-JS-Network/graph_complete.html">Click Here for Full Screen And Interactive Data Viz</a>
 
-
-## Graph of communities
-
-
- <div id="graph-2">
-    <style> body { margin: 0; } </style>
-    <!--
-    <script src="//unpkg.com/three"></script>
-    <script src="//unpkg.com/three-spritetext"></script>
-    <script src="//unpkg.com/3d-force-graph"></script>
-    -->
-    <div id="3d-graph-2">
-        <script type="text/javascript" src="/3d-JS-Network/graph_com.js"></script>
-    </div>
- </div>
-
 The network data includes 8 427 actors who played overall in xxxxx(less than 81 741 and more than 27 242) movies. 
 
 As is usual in most real-world networks, the network is very sparse. Only 0.03% of all possible links between actors are present.  
@@ -60,7 +44,7 @@ As is usual in most real-world networks, the network is very sparse. Only 0.03% 
 *Number of nodes:  8427 <br />
 Number of edges:  25865*
 
-It stars 645 communities in total, ranging from 1003 to 2 individuals. The community sizes distribution follows a power-law distribution and only the 14 widest communities contain more than a hundred actors.
+It stars 645 communities in total, ranging from 1080 to 2 individuals. The community sizes distribution follows a power-law distribution and only the 14 widest communities contain more than a hundred actors.
 
 {% include community_sizes_scatter.html %}
 
@@ -86,12 +70,62 @@ Concerning **occupation**, the three most recurring occupations concern less tha
 
 ### Communities intra and interrelationships
 
-11 et 14 not connected to any other
+The whole visualisation containing all the 8000 datapoints is quite messy and hard to read. But the world of data visualisation is well made and we can easily manage to highlight how the 20 most prominent communities interact with each other. 
 
-3,5,10 ensemble 
 
-les 15 restantes tous ensemble
+ <div id="graph-2">
+    <style> body { margin: 0; } </style>
+    <!--
+    <script src="//unpkg.com/three"></script>
+    <script src="//unpkg.com/three-spritetext"></script>
+    <script src="//unpkg.com/3d-force-graph"></script>
+    -->
+    <div id="3d-graph-2">
+        <script type="text/javascript" src="/3d-JS-Network/graph_com.js"></script>
+    </div>
+ </div>
 
+An interesting structure appears : 15 communities seem highly interconnect, with the 1rst and the 2nd community at the center of the web. On the other hand, communities 3, 5 and 10 interact with each other but have no connections with the rest of the communities. And lastly, 2 remaining communities (namely number 11 and number 14) think they are better off alone and are not connected to anyone else.
+
+Crossing this newfound information with the communities characterisation, we realise that the 3 connected communities are the 3 indian communities, and the 2 standalone ones both come from Japan ! 
+
+
+## A deeper investigation on selected topics
+Sooo, now that we have laid the stage, let’s dig deeper on specific subjects. Here’s a small selection of in-depth analyses. 
+
+# India : Spot the difference game 
+We discovered earlier three interconnected communities originating from India. The question is: can we spot differences between the 3 clusters? 
+
+**Maybe they correspond to different time periods of the Indian movie industry?** 
+
+Let’s take a look at the distribution over time of the movies produced in each community. Although there are some slight differences, it doesn’t seem to be the answer we are looking for.
+
+{% include india_time.html %}
+
+
+**Then maybe each community specialised in specific movies genres ?** 
+
+Not so much difference here either. We can however note that the Indian movie Industy has a predilection for Drama over Comedy. Half of the movies in each communities are labelled as dramas whereas less than 15 % are labelled as comedies. 
+
+{% include india_genre.png %}
+
+Another interesting discovery: the Bollywood label is not evenly distributed over the 3 communities. That’s something to look into ! After a quick research on Wikipedia, one can learn that the term ‘Bollywood’ refers to Hindi cinema, that is the part of the Indian industry that produces movies in Hindi language. Did you know that the Republic of India had 22 scheduled languages in its Constitution? 
+
+
+**So then, communities may be related to movie industries producing in different languages ?** 
+
+Luckily, our dataset provides us with data on languages in which a movie is produced. Bingo ! The 3 communities seem to have different main languages.
+
+{% include india_language.png %}
+
+The first one, community 3, mainly contains movies produced in Hindi language (79%). This is consistent with the ‘Bollywood’ label that we noticed earlier. The main 3 actors of this community (i.e. the most connected ones) are Shakti Kapoor, Amitabh Bachchan, Mithun Chakraborty. A quick journey on their personnal Wikipedia page confirms that we are dealing with the **Bollywood community**. Bollywood is indeed considered as the major sector within Indian Cinema. 
+
+The second one, community 5, is less sharply selective over one language. The most recurring languages are Tamil and Telugu languages, which are the biggest film industries after Bollywood. Fun fact, Telugu Cinema is also know as **Tollywood**. Within this community, we find personnalities related to Telugu Cinema, such as Brahmanandam and Ali, but also more intersectionnals actors. Nassar for example main plays in Tamil and Telugu Cinema, and Prakash Raj works in many different industries, comprising Tamil, Telugu, Hindi, and Malayalam-language films. 
+
+Which leads us to the last community, number 10. That one is related to Malayalam Cinema (also named as, as you can guess … Mollywood!) within which one can find actors such as Jagathi Sreekumar, Mohanlal Viswanathan and Mammootty.
+Malayalam, Telugu and Tamil Cinema are all a part of the Cinema of South India.
+
+{% include india_languagemap.svg %}
 
 
 ## TBF
