@@ -86,7 +86,7 @@ const createStatefullColorMapper = () => {
       }
       switch (mode) {
         case colorMode.COMMUNITY:
-          return (communityFilter[node.community] ?? true) ? (communityColor[node.community] ?? 'gray'): 'gray';
+          return (communityFilter[node.community] ?? true) ? (communityColor[node.community] ?? 'gray') : 'gray';
         case colorMode.GENDER:
           return genderColor[node.gender] ?? 'gray';
         case colorMode.NATIONALITY:
@@ -98,13 +98,28 @@ const createStatefullColorMapper = () => {
   }
 }
 
-const buildGraph = (data, colorMapper) => {
+// Will return a statfull label mapper object
+const createStatefullLabelMapper = () => {
+  let displayOccupations = false;
+  return {
+    setDisplayOccupations: (display) => {
+      displayOccupations = display;
+    },
+    label: (node) => {
+      const base = `${node.name}:\ncommunity ${node.community},\n${node.gender ? node.gender : 'unknown gender'}`;
+      if (!displayOccupations) {
+        return base;
+      }
+      return base + '\n' + JSON.parse(node.occupation?.replaceAll(`'`, `"`) ?? '[]')?.join(', ');
+    }
+  }
+}
+
+const buildGraph = (data, colorMapper, labelMapper) => {
   graph(document.getElementById('3d-graph'))
     .nodeRelSize(15)
-    .nodeColor((node) => colorMapper.color(node))
-    .nodeLabel(node => `${node.name}:
-  community ${node.community}, 
-  ${node.gender ? node.gender : 'unknown gender'}`)
+    .nodeColor(colorMapper.color)
+    .nodeLabel(labelMapper.label)
     .onNodeClick(node => {
       // Aim at node from outside it
       const distance = 100;
@@ -126,11 +141,7 @@ const buildGraph = (data, colorMapper) => {
     .graphData(data);
 }
 
-const updateGraph = (g, data) => {
-  g.graphData(data);
-}
-
-const buildLabelSelectors = (g, colorMapper, data) => {
+const buildLabelsSelectors = (g, colorMapper, data) => {
   const communities = new Set(data.nodes.map((n) => n.community))
 
   const selectors = document.getElementById('label-selectors');
@@ -159,6 +170,26 @@ const buildLabelSelectors = (g, colorMapper, data) => {
 
       selectors.appendChild(li);
     })
+  return data;
+}
+
+const buildLabelDiplaySelectors = (g, labelMapper, data) => {
+  const selectors = document.getElementById('occupation-selectors');
+  const label = document.createElement('label');
+  label.setAttribute('value', community);
+  label.setAttribute('innerText', community);
+  label.textContent = "Display all occupations in labels";
+
+  const input = document.createElement('input');
+  input.setAttribute('type', 'checkbox');
+  input.addEventListener('change', (event) => {
+    console.log(event.target.checked)
+    labelMapper.setDisplayOccupations(event.target.checked);
+    g.nodeLabel(labelMapper.label);
+  })
+
+  selectors.appendChild(label)
+  selectors.appendChild(input)
   return data;
 }
 
@@ -212,9 +243,11 @@ const buildRangeSelectors = (g, colorMapper, data) => {
 }
 
 const colorMapper = createStatefullColorMapper();
+const labelMapper = createStatefullLabelMapper();
 fetch('/3d-JS-Network/datasets/graph_complete_communities.json')
   .then(response => response.json())
-  .then((data) => buildLabelSelectors(graph, colorMapper, data))
+  .then((data) => buildLabelsSelectors(graph, colorMapper, data))
   .then((data) => buildColorSelectors(graph, colorMapper, data))
   .then((data) => buildRangeSelectors(graph, colorMapper, data))
-  .then((data) => buildGraph(data, colorMapper))
+  .then((data) => buildLabelDiplaySelectors(graph, labelMapper, data))
+  .then((data) => buildGraph(data, colorMapper, labelMapper))
