@@ -193,13 +193,13 @@ The second one, community 5, is less sharply selective over one language. The mo
 >📽️ Achievement ! </br>
 You discovered a new community : **The Tollywood Stars**
 
-Which leads us to the last community, number 10. That one is related to Malayalam Cinema (also named as, as you can guess ... Mollywood!) within which one can find actors such as Jagathi Sreekumar, Mohanlal Viswanathan and Mammootty.
+![image](india_languagemap.svg){: style="float: left"; margin-right: 10em; height="25%" width="25%"} Which leads us to the last community, number 10. That one is related to Malayalam Cinema (also named as, as you can guess ... Mollywood!) within which one can find actors such as Jagathi Sreekumar, Mohanlal Viswanathan and Mammootty.
 Malayalam, Telugu and Tamil Cinema are all a part of the Cinema of South India.
 
 >📽️ Achievement ! </br>
 You discovered a new community : **The Mollywood Comedy**
 
-{% include india_languagemap.svg %}
+<!--{% include india_languagemap.svg %}-->
 
 
 ### Genre Analysis
@@ -233,7 +233,15 @@ You discovered a new community : **The Slapstick Comedians**
 
 ### A Summary of Communities Description
 
-Here ends our guided tour exploring the network. If you want to explore deeper, you can find the summary of all mentionned communities and more here. 
+Here ends our guided tour exploring the network. If you want to explore deeper, you can find the summary of all mentionned communities and more here.
+
+
+<p>
+ <a href="/communities.html">
+  <img src="https://www.computerhope.com/cdn/media/logo-200-gray.png">
+  click here
+ </a>
+</p>
 
 ## Conclusion 
 
