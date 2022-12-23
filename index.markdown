@@ -44,7 +44,11 @@ After epics battles with Python, we finally outsmarted the beast and managed to 
     </div>
 </div>
 
-<a href="3d-JS-Network/graph_complete.html">Click Here for Full Screen And Interactive Data Viz</a>
+As the network is big, the graph is a bit heavy to render correctly... you will need to drag a node to force a better rendering.
+
+You can move into the graph with your mouse (trackpad isn't recommended if you want to keep your nerves). Every node color represent a community and you will find more info if you pass your mouse over the node.
+
+This graph only shows the 20 first communities, but you <a href="3d-JS-Network/graph_complete.html">here is a graph of every nodes</a>. Furthermore you will be able to select which community to show, color by nationality or by actor's year of birth (you definitly wants to see that, heaven if it's a bit long to charge).
 
 The network data includes 8 427 actors who played overall in xxxxx(less than 81 741 and more than 27 242) movies. 
 
@@ -78,7 +82,7 @@ Community 20 is the only one comprising a majority of Swedish actors (more than 
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
-📽️ Achievement ! <br>
+📽️  Achievement unlocked ! <br>
 You discovered community 20 : <b>The Nordic Crew </b>
 </p>
 </blockquote>
@@ -92,11 +96,6 @@ Well, the world of data viz is well made and we can easily manage to highlight h
 
 <div id="graph-2">
     <style> body { margin: 0; } </style>
-    <!--
-    <script src="//unpkg.com/three"></script>
-    <script src="//unpkg.com/three-spritetext"></script>
-    <script src="//unpkg.com/3d-force-graph"></script>
-    -->
     <div id="3d-graph-2">
         <script type="text/javascript" src="/3d-JS-Network/graph_com.js"></script>
     </div>
@@ -142,7 +141,7 @@ Community 18 for starters shows a very dense production in the 1910s. Movies inc
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
-📽️ Achievement ! <br>
+📽️  Achievement unlocked ! <br>
 You discovered community 18 : <b>The Dawn of American Cinema</b>
 </p>
 </blockquote>
@@ -157,7 +156,7 @@ Well, provided with the gender ratios over time, we don't really know wether the
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
-📽️ Achievement ! <br>
+📽️  Achievement unlocked ! <br>
 You discovered community 2 : <b>The Golden Oldies</b>
 </p>
 </blockquote>
@@ -167,7 +166,7 @@ Another short lived community is the number 11! Here the community is more recen
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
-📽️ Achievement ! <br>
+📽️  Achievement unlocked ! <br>
 You discovered community 11 : <b>The Anime Squad</b>
 </p>
 </blockquote>
@@ -202,7 +201,7 @@ The first one, community 3, mainly contains movies produced in Hindi language (7
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
-📽️ Achievement ! <br>
+📽️  Achievement unlocked ! <br>
 You discovered a new community : <b>The Bollywood Drama Club</b>
 </p>
 </blockquote>
@@ -211,19 +210,19 @@ The second one, community 5, is less sharply selective over one language. The mo
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
-📽️ Achievement ! <br>
+📽️  Achievement unlocked ! <br>
 You discovered a new community : <b>The Tollywood Stars</b>
 </p>
 </blockquote>
 
-<><img  src="assets/images/india_languagemap.svg" width="300"/><>
+<img  src="assets/images/india_languagemap.svg" width="300" style="display: block; margin-left: auto; margin-right: auto; width: 50%"/>
 
 Which leads us to the last community, number 10. That one is related to Malayalam Cinema (also named as, as you can guess ... Mollywood!) within which one can find actors such as Jagathi Sreekumar, Mohanlal Viswanathan and Mammootty.
 Malayalam, Telugu and Tamil Cinema are all a part of the Cinema of South India.
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
-📽️ Achievement ! <br>
+📽️  Achievement unlocked ! <br>
 You discovered a new community : <b>The Mollywood Comedy</b>
 </p>
 </blockquote>
@@ -247,7 +246,7 @@ Still, we can identify features of the communities. Community 6 relates to Marti
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
-📽️ Achievement ! <br>
+📽️  Achievement unlocked ! <br>
 You discovered a new community : <b>The Chinese Combatants</b>
 </p>
 </blockquote>
@@ -255,7 +254,7 @@ Let’s see what else the genre appearence matrix can help us discover. Communit
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
-📽️ Achievement ! <br>
+📽️  Achievement unlocked ! <br>
 You discovered a new community : <b>The Cartoon Connoisseurs</b>
 </p>
 </blockquote>
@@ -264,7 +263,7 @@ On the bottom of the genre appearance matrix, an unknown genre label appears : S
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
-📽️ Achievement ! <br>
+📽️  Achievement unlocked ! <br>
 You discovered a new community : <b>The Slapstick Comedians</b>
 </p>
 </blockquote>
@@ -308,7 +307,6 @@ Sometimes when acting, you have to really become the personna you’re playing. 
 
 <p>
  <a href="/communities.html">
-  <img src="https://www.computerhope.com/cdn/media/logo-200-gray.png">
-  click here
+  <img src="https://www.computerhope.com/cdn/media/logo-200-gray.png" width="300" style="display: block; margin-left: auto; margin-right: auto"/>
  </a>
 </p>

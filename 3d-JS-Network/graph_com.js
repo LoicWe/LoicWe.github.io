@@ -1,29 +1,5 @@
 const graph_com = ForceGraph3D()
 
-/*
-const communityColor = {
-  '1': '#2f4f4f', //darkslategray
-  '2': '#556b2f', //darkolivegreen
-  '3': '#8b4513', //saddlebrown
-  '4': '#ff4500', //orangered
-  '5': '#00fa9a', //mediumspringgreen
-  '6': '#20b2aa', //lightseagreen
-  '7': '#8b008b', //darkmagenta
-  '8': '#ff1493', //deeppink
-  '9': 'yellow',
-  '10': '#ffa07a', //lightsalmon
-  '11': '#9acd32', //yellowgreen
-  '12': '#00ff00', //lime
-  '13': 'orange', 
-  '14': 'green',
-  '15': '#dc143c', //crimson
-  '16': 'blue', 
-  '17': '#db7093', //palevioletred
-  '18': '#eee8aa', //palegoldenrod
-  '19': '#ee82ee', //violet
-  '20': '#7b68ee', //mediumslateblue
-}*/
-
 // controls
 graph_com(document.getElementById('3d-graph-2'))
   .jsonUrl('3d-JS-Network/datasets/graph_communities.json')
