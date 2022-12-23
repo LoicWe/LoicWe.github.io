@@ -216,7 +216,8 @@ You discovered a new community : <b>The Tollywood Stars</b>
 </p>
 </blockquote>
 
-<img  src="assets/images/india_languagemap.svg" />
+<><img  src="assets/images/india_languagemap.svg" width="300"/><>
+
 Which leads us to the last community, number 10. That one is related to Malayalam Cinema (also named as, as you can guess ... Mollywood!) within which one can find actors such as Jagathi Sreekumar, Mohanlal Viswanathan and Mammootty.
 Malayalam, Telugu and Tamil Cinema are all a part of the Cinema of South India.
 
@@ -226,8 +227,6 @@ Malayalam, Telugu and Tamil Cinema are all a part of the Cinema of South India.
 You discovered a new community : <b>The Mollywood Comedy</b>
 </p>
 </blockquote>
-
-<!--{% include india_languagemap.svg %} align="right" width="180" height="220"-->
 
 
 ### Genre Analysis

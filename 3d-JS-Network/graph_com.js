@@ -1,5 +1,6 @@
 const graph_com = ForceGraph3D()
 
+/*
 const communityColor = {
   '1': '#2f4f4f', //darkslategray
   '2': '#556b2f', //darkolivegreen
@@ -21,13 +22,13 @@ const communityColor = {
   '18': '#eee8aa', //palegoldenrod
   '19': '#ee82ee', //violet
   '20': '#7b68ee', //mediumslateblue
-}
+}*/
 
 // controls
 graph_com(document.getElementById('3d-graph-2'))
   .jsonUrl('3d-JS-Network/datasets/graph_communities.json')
   .nodeVal(node => node.intra/100)
-  .nodeColor(node => communityColor[node['community']])
+  .nodeColor(node => communityColor[node.id])
   .nodeLabel(node => `community ${node.id}, number of intra-relations: ${node.intra}`)
 
   // Links

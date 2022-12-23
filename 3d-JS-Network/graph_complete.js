@@ -29,27 +29,42 @@ const genderColor = {
   NaN: 'grey',
 }
 
+
+
+
+
 const nationalityColor = {
-  'United States of America': 'blue',
-  'India': 'green',
-  'United Kingdom': 'purple',
-  'France': 'yellow',
-  'Italy': 'orange',
-  'Japan': 'red',
-  'Canada': 'darkgreen',
-  'Germany': 'grey',
-  'Argentina': '#77dd77', // 'pastelgreen',
-  'Hong Kong': 'pink',
-  'Spain': '#4acfee', // 'aquablue',
-  'Australia': '#2719a1', // 'indigoblue',
-  'South Korea': '#fc5a8d', // 'strawberry',
-  'Mexico': '#08ff08', // 'fluorescentgreen',
-  'Netherlands': '#2c6705', // 'bamboo',
-  'Sweden': 'white',
-  'West Germany': '#b7410e', // 'rust',
-  'China': 'magenta',
+  'United States of America': '#FF8E43', //coral
+  'United Kingdom': '#FC3B01', //Vermillion
+  'Australia': '#FEEFB1', //Buttermilk
+  'Canada': '#FF4B2F', //red orange
+  
+  'India': '#f2e938', //confetti
+  'Bhutan' : '#F9DB31', //bright sun
+  'Pakistan': 'gold',
+  
+  'Japan': '#C1E522', //pear
+  'Hong Kong': '#ABEF52', //Sulu
+  'China': '#9CE692', //granny smith green
+  'Taiwan' : '#68ce7f', 
+  
+  'Egypt' : '#E6EB59',
+  
+  'France': '#287271', //Skobeloff
+  'Italy': '#298880', //Celadon green
+  'Germany': '#5a8aa6',
+  'Spain': '#3B464E', //lime spruce
+  'Netherlands': 'navy',
+  'Sweden': '#264653', //charcoal 
+  'Ireland': '#264653', 
+  'Portugal' : '#D3E7D7', //surf crest
+
   'Denmark': '#d473d4', // 'mauve',
   'Soviet Union': '#9d7651', // 'mocha',
+  'West Germany': '#b7410e', // 'rust',
+  'Mexico': '#08ff08', // 'fluorescentgreen',
+  'South Korea': '#fc5a8d', // 'strawberry',
+  'Argentina': '#77dd77', // 'pastelgreen',
 }
 
 const colorMode = {
