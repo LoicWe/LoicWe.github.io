@@ -1,26 +1,26 @@
 const graph = ForceGraph3D()
 
 const communityColor = {
-  '1': 'green',
-  '2': 'purple',
-  '3': 'yellow',
-  '4': 'orange',
-  '5': 'red',
-  '6': 'darkgreen',
-  '7': 'grey',
-  '8': '#77dd77', // 'pastelgreen',
-  '9': 'pink',
-  '10': '#4acfee', // 'aquablue',
-  '11': '#2719a1', // 'indigoblue',
-  '12': '#fc5a8d', // 'strawberry',
-  '13': '#08ff08', // 'fluorescentgreen',
-  '14': '#2c6705', // 'bamboo',
-  '15': 'white',
-  '16': '#b7410e', // 'rust',
-  '17': 'magenta',
-  '18': '#d473d4', // 'mauve',
-  '19': '#9d7651', // 'mocha',
-  '20': 'blue',
+  '1': '#2f4f4f', //darkslategray
+  '2': '#556b2f', //darkolivegreen
+  '3': '#8b4513', //saddlebrown
+  '4': '#ff4500', //orangered
+  '5': '#00fa9a', //mediumspringgreen
+  '6': '#20b2aa', //lightseagreen
+  '7': '#8b008b', //darkmagenta
+  '8': '#ff1493', //deeppink
+  '9': 'yellow',
+  '10': '#ffa07a', //lightsalmon
+  '11': '#9acd32', //yellowgreen
+  '12': '#00ff00', //lime
+  '13': 'orange', 
+  '14': 'green',
+  '15': '#dc143c', //crimson
+  '16': 'blue', 
+  '17': '#db7093', //palevioletred
+  '18': '#eee8aa', //palegoldenrod
+  '19': '#ee82ee', //violet
+  '20': '#7b68ee', //mediumslateblue
 }
 
 const genderColor = {
