@@ -19,10 +19,9 @@ Provided with this information, we excavate an underpinning structure of the mov
 
 Once we have our network, we can cluster actors in communities of strongly-related individuals using the Louvain algorithm. Then, the computed communities can be characterized to understand who gets to access the wider communities, how interconnected the communities are and lots of other fascinating questions. With the initial corpus, we got information on actors date of birth, movies they played in, genres, languages and countries of movies. To have a better understanding of the main communities, we decided to scrape additionnal information such as actors nationality and occupations. However, as scraping is a very time-consuming task, we decided to only apply it on the 20 most populated communities. 
 
-<aside>
-📽️ Let’s start our journey to explore the results ! 
+>📽️ Let’s start our journey to explore the results ! </br>
 Our quest : identifying and naming as much communities as we can
-</aside>
+
 
 
 ## The Network and Communities
@@ -71,6 +70,10 @@ Let's take a quick look at some of the most populated communities:
 Concerning **gender**, all of them contains more male than female actors, which is sadly not very suprising. We send our greatest congratulations to the 18th community which achieves the higher parity within its ranks (48% female and 52% male actors). 
 
 Concerning **nationality**, at least 50% of the actors in each community come from the same country. It would seem that communities are very homogeneous over actor's nationalities. 10 communities out of the 20 comprise a majority of american actors (more than 70%). Interestingely, there are 3 very homogeneous communities comprising more than 95% of indian actors (community 3,5 and 10). The community 12 presents a sligthly more even distribution between its 3 most recurrent nationalities (France 55%, Italy 30%, Portugal 5%).
+Community 20 is the only one comprising a majority of Swedish actors (more than 85%).
+
+>📽️ Achievement ! </br>
+You discovered community 20 : **The Nordic Crew**
 
 Concerning **occupation**, the three most recurring occupations concern less than half of each community's population. Thus, communities as less homogeneous over occupations than over nationality. 
 
@@ -122,15 +125,24 @@ Community 18 for starters shows a very dense production in the 1910s.
 
 **insert plot of 18 mains characteristics.** 
 
+>📽️ Achievement ! </br>
+You discovered community 18 : **The Dawn of American Cinema**
+
 It fades out quickly, lasting only aroud 35 years. This is why its main features are very representative of the first era of the cinema. Sadly, as you may remember from the Network and Communities description earlier, it was also the community performing the higher gender parity within its ranks. This is a bad omen concerning the gender equity of more contemporary communities. 
 
 On the other hand, community 2 spans over a whole century.  We would expect the community to evolve over time (for example transitionning from black and white to color technologies). Contrary to community 18, it did perform badly in terms of gender parity, but maybe there is an improvement with time? 
 
 *Community 2 discussion*
 
+>📽️ Achievement ! </br>
+You discovered community 2 : **The Golden Oldies**
+
 Another short lived community is the number 11! Here the community is more recent, emerging in the 1980s. Looking at the differents features collected for this community, we discover that we are evolving in the world of japanize Anime movies. That is why it is such a recent community! 
 
 **insert plot of 11 mains characteristics.** 
+
+>📽️ Achievement ! </br>
+You discovered community 11 : **The Anime Squad**
 
 
 
@@ -160,10 +172,19 @@ Luckily, our dataset provides us with data on languages in which a movie is prod
 
 The first one, community 3, mainly contains movies produced in Hindi language (79%). This is consistent with the 'Bollywood' label that we noticed earlier. The main 3 actors of this community (i.e. the most connected ones) are Shakti Kapoor, Amitabh Bachchan, Mithun Chakraborty. A quick journey on their personnal Wikipedia page confirms that we are dealing with the **Bollywood community**. Bollywood is indeed considered as the major sector within Indian Cinema.
 
+>📽️ Achievement ! </br>
+You discovered a new community : **The Bollywood Drama Club**
+
 The second one, community 5, is less sharply selective over one language. The most recurring languages are Tamil and Telugu languages, which are the biggest film industries after Bollywood. Fun fact, Telugu Cinema is also know as **Tollywood**. Within this community, we find personnalities related to Telugu Cinema, such as Brahmanandam and Ali, but also more intersectionnals actors. Nassar for example main plays in Tamil and Telugu Cinema, and Prakash Raj works in many different industries, comprising Tamil, Telugu, Hindi, and Malayalam-language films. 
+
+>📽️ Achievement ! </br>
+You discovered a new community : **The Tollywood Stars**
 
 Which leads us to the last community, number 10. That one is related to Malayalam Cinema (also named as, as you can guess ... Mollywood!) within which one can find actors such as Jagathi Sreekumar, Mohanlal Viswanathan and Mammootty.
 Malayalam, Telugu and Tamil Cinema are all a part of the Cinema of South India.
+
+>📽️ Achievement ! </br>
+You discovered a new community : **The Mollywood Comedy**
 
 {% include india_languagemap.svg %}
 
@@ -180,7 +201,30 @@ But the less-common genre provide great information !
 
 We can easily find communities discovered earlier, like community 18, with its black and white and silent film labels. 
 
-Some labels seem different that the others and catch the attention : Chinese Movies, Japanese Movies, Bollywood. These labels don’t hold information on the type of story that the movie is displaying, but on the film industry producing the movie. They are strongly present within their respective communities. Chinese Movies, for example, is the 2nd most represented label in a community, after Silent Film. Squinting the eyes to read the graph, we observe that these labels are linked to a common label : World Cinema. What does this label mean? We would naively interpret that World Cinema means Cinema produced in the world, and since until proven otherwise every country of Earth is part of the World, it would only seem logical that every community had that label. But this is not the case … Wikipedia (always having our back) helps us understand this unknown concept : it is the negation of the Cinema of the USA. Its definition encompasses everything that is not produced by the American Industry. The existence of such a term in our dataset demonstrates a bias : since the data was collected from Wikipedia English pages, it is extremely more likely to be Americentric and ignore the wonderful variety of cinemas industries on the planet.
+Some labels seem different that the others and catch the attention : Chinese Movies, Japanese Movies, Bollywood. These labels don’t hold information on the type of story that the movie is displaying, but on the film industry producing the movie. They are strongly present within their respective communities. Chinese Movies, for example, is the 2nd most represented label in a community, after Silent Film. Squinting the eyes to read the graph, we observe that these labels are linked to a common label : **World Cinema**. What does this label mean? We could naively interpret that World Cinema means Cinema produced in the world, and since until proven otherwise every country of Earth is part of the World, it would only seem logical that every community had that label. But this is not the case … Wikipedia (always having our back) helps us understand this unknown concept : it is the negation of the Cinema of the USA. Its definition encompasses everything that is not produced by the American Industry. The existence of such a term in our dataset demonstrates a bias : since the data was collected from Wikipedia English pages, it is extremely more likely to be Americentric and ignore the wonderful variety of cinemas industries on the planet.
+
+Still, we can identify features of the communities. Community 6 relates to Martial Arts, in the tradition of the Chinese industry. 
+
+>📽️ Achievement ! </br>You discovered a new community : **The Chinese Combatants**
+
+Let’s see what else the genre appearence matrix can help us discover. Community 7 mainly features Family Film and Animation. Mainly originating from the US, this community includes Disney and others. 
+
+>📽️ Achievement ! </br>
+You discovered a new community : **The Cartoon Connoisseurs**
+
+On the bottom of the genre appearance matrix, an unknown genre label appears : Slapstick. This is a type of humor mostly used in the Golden Era of Black and White movies. Here we can find The Three Stooges, a highly productive trio of comedians, with movies such as *Beer and Pretzels or Hula-La-La.* 
+
+>📽️ Achievement ! </br>
+You discovered a new community : **The Slapstick Comedians**
+
+
+### A Summary of Communities Description
+
+Here ends our guided tour exploring the network. If you want to explore deeper, you can find the summary of all mentionned communities and more here. 
+
+## Conclusion 
+
+
 
 # Bibliography
 
