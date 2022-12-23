@@ -78,7 +78,7 @@ Community 20 is the only one comprising a majority of Swedish actors (more than 
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
->📽️ Achievement ! <br>
+📽️ Achievement ! <br>
 You discovered community 20 : **The Nordic Crew**
 </p>
 </blockquote>
@@ -139,7 +139,7 @@ Community 18 for starters shows a very dense production in the 1910s. Movies inc
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
->📽️ Achievement ! <br>
+📽️ Achievement ! <br>
 You discovered community 18 : **The Dawn of American Cinema**
 </p>
 </blockquote>
@@ -152,7 +152,7 @@ On the other hand, community 2 spans over a whole century.  We would expect the 
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
->📽️ Achievement ! <br>
+📽️ Achievement ! <br>
 You discovered community 2 : **The Golden Oldies**
 </p>
 </blockquote>
@@ -162,7 +162,7 @@ Another short lived community is the number 11! Here the community is more recen
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
->📽️ Achievement ! <br>
+📽️ Achievement ! <br>
 You discovered community 11 : **The Anime Squad**
 </p>
 </blockquote>
@@ -197,7 +197,7 @@ The first one, community 3, mainly contains movies produced in Hindi language (7
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
->📽️ Achievement ! <br>
+📽️ Achievement ! <br>
 You discovered a new community : **The Bollywood Drama Club**
 </p>
 </blockquote>
@@ -206,7 +206,7 @@ The second one, community 5, is less sharply selective over one language. The mo
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
->📽️ Achievement ! <br>
+📽️ Achievement ! <br>
 You discovered a new community : **The Tollywood Stars**
 </p>
 </blockquote>
@@ -216,7 +216,7 @@ Malayalam, Telugu and Tamil Cinema are all a part of the Cinema of South India.
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
->📽️ Achievement ! <br>
+📽️ Achievement ! <br>
 You discovered a new community : **The Mollywood Comedy**
 </p>
 </blockquote>
@@ -242,7 +242,7 @@ Still, we can identify features of the communities. Community 6 relates to Marti
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
->📽️ Achievement ! <br>
+📽️ Achievement ! <br>
 You discovered a new community : **The Chinese Combatants**
 </p>
 </blockquote>
@@ -250,7 +250,7 @@ Let’s see what else the genre appearence matrix can help us discover. Communit
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
->📽️ Achievement ! <br>
+📽️ Achievement ! <br>
 You discovered a new community : **The Cartoon Connoisseurs**
 </p>
 </blockquote>
@@ -259,7 +259,7 @@ On the bottom of the genre appearance matrix, an unknown genre label appears : S
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
->📽️ Achievement ! <br>
+📽️ Achievement ! <br>
 You discovered a new community : **The Slapstick Comedians**
 </p>
 </blockquote>
