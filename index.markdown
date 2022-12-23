@@ -79,7 +79,7 @@ Community 20 is the only one comprising a majority of Swedish actors (more than 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
 📽️ Achievement ! <br>
-You discovered community 20 : **The Nordic Crew**
+You discovered community 20 : <b>The Nordic Crew </b>
 </p>
 </blockquote>
 
@@ -140,7 +140,7 @@ Community 18 for starters shows a very dense production in the 1910s. Movies inc
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
 📽️ Achievement ! <br>
-You discovered community 18 : **The Dawn of American Cinema**
+You discovered community 18 : <b>The Dawn of American Cinema</b>
 </p>
 </blockquote>
 
@@ -153,7 +153,7 @@ On the other hand, community 2 spans over a whole century.  We would expect the 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
 📽️ Achievement ! <br>
-You discovered community 2 : **The Golden Oldies**
+You discovered community 2 : <b>The Golden Oldies</b>
 </p>
 </blockquote>
 
@@ -163,7 +163,7 @@ Another short lived community is the number 11! Here the community is more recen
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
 📽️ Achievement ! <br>
-You discovered community 11 : **The Anime Squad**
+You discovered community 11 : <b>The Anime Squad</b>
 </p>
 </blockquote>
 
@@ -198,7 +198,7 @@ The first one, community 3, mainly contains movies produced in Hindi language (7
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
 📽️ Achievement ! <br>
-You discovered a new community : **The Bollywood Drama Club**
+You discovered a new community : <b>The Bollywood Drama Club</b>
 </p>
 </blockquote>
 
@@ -207,21 +207,22 @@ The second one, community 5, is less sharply selective over one language. The mo
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
 📽️ Achievement ! <br>
-You discovered a new community : **The Tollywood Stars**
+You discovered a new community : <b>The Tollywood Stars</b>
 </p>
 </blockquote>
 
-![image](india_languagemap.svg){: style="float: left"; margin-right: 10em; height="25%" width="25%"} Which leads us to the last community, number 10. That one is related to Malayalam Cinema (also named as, as you can guess ... Mollywood!) within which one can find actors such as Jagathi Sreekumar, Mohanlal Viswanathan and Mammootty.
+<img  src="assets/images/india_languagemap.svg" />
+Which leads us to the last community, number 10. That one is related to Malayalam Cinema (also named as, as you can guess ... Mollywood!) within which one can find actors such as Jagathi Sreekumar, Mohanlal Viswanathan and Mammootty.
 Malayalam, Telugu and Tamil Cinema are all a part of the Cinema of South India.
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
 📽️ Achievement ! <br>
-You discovered a new community : **The Mollywood Comedy**
+You discovered a new community : <b>The Mollywood Comedy</b>
 </p>
 </blockquote>
 
-<!--{% include india_languagemap.svg %}-->
+<!--{% include india_languagemap.svg %} align="right" width="180" height="220"-->
 
 
 ### Genre Analysis
@@ -243,7 +244,7 @@ Still, we can identify features of the communities. Community 6 relates to Marti
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
 📽️ Achievement ! <br>
-You discovered a new community : **The Chinese Combatants**
+You discovered a new community : <b>The Chinese Combatants</b>
 </p>
 </blockquote>
 Let’s see what else the genre appearence matrix can help us discover. Community 7 mainly features Family Film and Animation. Mainly originating from the US, this community includes Disney and others. 
@@ -251,7 +252,7 @@ Let’s see what else the genre appearence matrix can help us discover. Communit
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
 📽️ Achievement ! <br>
-You discovered a new community : **The Cartoon Connoisseurs**
+You discovered a new community : <b>The Cartoon Connoisseurs</b>
 </p>
 </blockquote>
 
@@ -260,7 +261,7 @@ On the bottom of the genre appearance matrix, an unknown genre label appears : S
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
 📽️ Achievement ! <br>
-You discovered a new community : **The Slapstick Comedians**
+You discovered a new community : <b>The Slapstick Comedians</b>
 </p>
 </blockquote>
 
@@ -293,7 +294,7 @@ Here’s a incredible person! Alice Guy was a French pioneer film producer, and 
 
 - Trigger, Pal, Skippy and Cheeta
 
-Humans can be actors, but why could animals not be ! In the network, some actors are animals, such as Pal and Skippy the dogs, Trigger the horse, and Cheeta the chimpanzee sidekick of Tarzan. They all are a part of community 2 : **The Golden Oldies.**
+Humans can be actors, but why could animals not be ! In the network, some actors are animals, such as Pal and Skippy the dogs, Trigger the horse, and Cheeta the chimpanzee sidekick of Tarzan. They all are a part of community 2 : <b>The Golden Oldies</b>
 
 - the Firefighter
 
