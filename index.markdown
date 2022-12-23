@@ -8,20 +8,8 @@ title:
 
 {% include title.html %}
 
-<html lang="en">
-    <head>
-        <style>
-            #p1 {
-                background-color: gray;
-                padding-left: 50px;
-            }
-        </style>
-    </head>
-    <body>
-        <p id="p1">
-            Since what is considered as the first commercial cinematographic projection by Les Frères Lumière in Paris, December 1895, the movie industry has grown to be worth several tens of billions dollars. Dozens of studios were created, producing an increasing number of movies each year. Today, several thousands of movies are released worldwide each year and they represent an unnegligable cultural vector. Movies are an important instrument in the soft power toolbox. Thus, we came to ask ourselves this burning question: what is the influence of the movie industry around the world? </p>
-    </body>
-</html>
+Since what is considered as the first commercial cinematographic projection by Les Frères Lumière in Paris, December 1895, the movie industry has grown to be worth several tens of billions dollars. Dozens of studios were created, producing an increasing number of movies each year. Today, several thousands of movies are released worldwide each year and they represent an unnegligable cultural vector. Movies are an important instrument in the soft power toolbox. Thus, we came to ask ourselves this burning question: what is the influence of the movie industry around the world ?
+
 
 Of course that is too grand a question to be answered with the tap of a finger. But nonetheless, we can try to focus on specific aspects of the movie industry, such as actors. Here's our attempt to collect some nuggets of information about the world of movies and actors in it.
 
@@ -32,9 +20,12 @@ Provided with this information, we excavate an underpinning structure of the mov
 
 Once we have our network, we can cluster actors in communities of strongly-related individuals using the Louvain algorithm. Then, the computed communities can be characterized to understand who gets to access the wider communities, how interconnected the communities are and lots of other fascinating questions. With the initial corpus, we got information on actors date of birth, movies they played in, genres, languages and countries of movies. To have a better understanding of the main communities, we decided to scrape additionnal information such as actors nationality and occupations. However, as scraping is a very time-consuming task, we decided to only apply it on the 20 most populated communities. 
 
->📽️ Let’s start our journey to explore the results ! </br>
+<blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
+<p>
+📽️ Let’s start our journey to explore the results ! <br>
 Our quest : identifying and naming as much communities as we can
-
+</p>
+</blockquote>
 
 
 ## The Network and Communities
@@ -85,8 +76,12 @@ Concerning **gender**, all of them contains more male than female actors, which 
 Concerning **nationality**, at least 50% of the actors in each community come from the same country. It would seem that communities are very homogeneous over actor's nationalities. 10 communities out of the 20 comprise a majority of american actors (more than 70%). Interestingely, there are 3 very homogeneous communities comprising more than 95% of indian actors (community 3,5 and 10). The community 12 presents a sligthly more even distribution between its 3 most recurrent nationalities (France 55%, Italy 30%, Portugal 5%).
 Community 20 is the only one comprising a majority of Swedish actors (more than 85%).
 
->📽️ Achievement ! </br>
+<blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
+<p>
+📽️ Achievement ! <br>
 You discovered community 20 : **The Nordic Crew**
+</p>
+</blockquote>
 
 Concerning **occupation**, the three most recurring occupations concern less than half of each community's population. Thus, communities as less homogeneous over occupations than over nationality. 
 
@@ -145,8 +140,12 @@ The map described the community size accumulated over the years. Let’s now tak
 
 Community 18 for starters shows a very dense production in the 1910s. Movies included are U.S. silent, black and white short films featuring actors such as Charlotte Burton or Harry von Meter. 
 
->📽️ Achievement ! </br>
+<blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
+<p>
+📽️ Achievement ! <br>
 You discovered community 18 : **The Dawn of American Cinema**
+</p>
+</blockquote>
 
 This community fades out quickly, lasting only aroud 35 years. This is why its main features are very representative of the first era of the cinema. Sadly, as you may remember from the Network and Communities description earlier, it was also the community performing the higher gender parity within its ranks. This is a bad omen concerning the gender equity of more contemporary communities. 
 
@@ -156,13 +155,22 @@ On the other hand, community 2 spans over a whole century.  We would expect the 
 
 Well, provided with the gender ratios over time, we don't really know wether the gender parity improved over time or not. There is a high variance between the years. To see wether there are so underlying tendencies, we tried fitting a regression line on the data, but in resulted in a flat line which didn't explain the variance (R^2 = 0.006). So there doesn't seem to be an increasing tendency over the whole century. However, we can see that since the 2000s the parity is more stable. 
 
->📽️ Achievement ! </br>
+<blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
+<p>
+📽️ Achievement ! <br>
 You discovered community 2 : **The Golden Oldies**
+</p>
+</blockquote>
 
 Another short lived community is the number 11! Here the community is more recent, emerging in the 1980s. Looking at the differents features collected for this community, we discover that we are evolving in the world of japanize Anime movies. That is why it is such a recent community! 
 
->📽️ Achievement ! </br>
+
+<blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
+<p>
+📽️ Achievement ! <br>
 You discovered community 11 : **The Anime Squad**
+</p>
+</blockquote>
 
 
 
@@ -192,19 +200,31 @@ Luckily, our dataset provides us with data on languages in which a movie is prod
 
 The first one, community 3, mainly contains movies produced in Hindi language (79%). This is consistent with the 'Bollywood' label that we noticed earlier. The main 3 actors of this community (i.e. the most connected ones) are Shakti Kapoor, Amitabh Bachchan, Mithun Chakraborty. A quick journey on their personnal Wikipedia page confirms that we are dealing with the **Bollywood community**. Bollywood is indeed considered as the major sector within Indian Cinema.
 
->📽️ Achievement ! </br>
+<blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
+<p>
+📽️ Achievement ! <br>
 You discovered a new community : **The Bollywood Drama Club**
+</p>
+</blockquote>
 
 The second one, community 5, is less sharply selective over one language. The most recurring languages are Tamil and Telugu languages, which are the biggest film industries after Bollywood. Fun fact, Telugu Cinema is also know as **Tollywood**. Within this community, we find personnalities related to Telugu Cinema, such as Brahmanandam and Ali, but also more intersectionnals actors. Nassar for example main plays in Tamil and Telugu Cinema, and Prakash Raj works in many different industries, comprising Tamil, Telugu, Hindi, and Malayalam-language films. 
 
->📽️ Achievement ! </br>
+<blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
+<p>
+📽️ Achievement ! <br>
 You discovered a new community : **The Tollywood Stars**
+</p>
+</blockquote>
 
 ![image](india_languagemap.svg){: style="float: left"; margin-right: 10em; height="25%" width="25%"} Which leads us to the last community, number 10. That one is related to Malayalam Cinema (also named as, as you can guess ... Mollywood!) within which one can find actors such as Jagathi Sreekumar, Mohanlal Viswanathan and Mammootty.
 Malayalam, Telugu and Tamil Cinema are all a part of the Cinema of South India.
 
->📽️ Achievement ! </br>
+<blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
+<p>
+📽️ Achievement ! <br>
 You discovered a new community : **The Mollywood Comedy**
+</p>
+</blockquote>
 
 <!--{% include india_languagemap.svg %}-->
 
@@ -225,17 +245,29 @@ Some labels seem different that the others and catch the attention : Chinese Mov
 
 Still, we can identify features of the communities. Community 6 relates to Martial Arts, in the tradition of the Chinese industry. 
 
->📽️ Achievement ! </br>You discovered a new community : **The Chinese Combatants**
-
+<blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
+<p>
+📽️ Achievement ! <br>
+You discovered a new community : **The Chinese Combatants**
+</p>
+</blockquote>
 Let’s see what else the genre appearence matrix can help us discover. Community 7 mainly features Family Film and Animation. Mainly originating from the US, this community includes Disney and others. 
 
->📽️ Achievement ! </br>
+<blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
+<p>
+📽️ Achievement ! <br>
 You discovered a new community : **The Cartoon Connoisseurs**
+</p>
+</blockquote>
 
 On the bottom of the genre appearance matrix, an unknown genre label appears : Slapstick. This is a type of humor mostly used in the Golden Era of Black and White movies. Here we can find The Three Stooges, a highly productive trio of comedians, with movies such as *Beer and Pretzels or Hula-La-La.* 
 
->📽️ Achievement ! </br>
+<blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
+<p>
+📽️ Achievement ! <br>
 You discovered a new community : **The Slapstick Comedians**
+</p>
+</blockquote>
 
 
 ### A Summary of Communities Description
@@ -245,6 +277,7 @@ Here ends our guided tour exploring the network. If you want to explore deeper, 
 ## Conclusion 
 
 To conclude, based on the analysis performed on a database of actors and movies, we observed that clusters of actors are mainly cristallized over shared country and language spoken. Additionnal relevant features were genre and time distribution.
+
 
 This analysis demonstrates again the power of algorithmic tools, which by simply clustering actors by costarred movies helped us make sense of the data and identify the main cinematographic movements and industries. 
 

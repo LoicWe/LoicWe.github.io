@@ -1,7 +1,6 @@
 const graph = ForceGraph3D()
 
 const communityColor = {
-  '0': 'blue',
   '1': 'green',
   '2': 'purple',
   '3': 'yellow',
@@ -21,6 +20,7 @@ const communityColor = {
   '17': 'magenta',
   '18': '#d473d4', // 'mauve',
   '19': '#9d7651', // 'mocha',
+  '20': 'blue',
 }
 
 const genderColor = {
