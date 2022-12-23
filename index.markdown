@@ -8,20 +8,11 @@ title:
 
 {% include title.html %}
 
-<html lang="en">
-    <head>
-        <style>
-            #p1 {
-                background-color: gray;
-                padding-left: 50px;
-            }
-        </style>
-    </head>
-    <body>
-        <p id="p1">
-            Since what is considered as the first commercial cinematographic projection by Les Frères Lumière in Paris, December 1895, the movie industry has grown to be worth several tens of billions dollars. Dozens of studios were created, producing an increasing number of movies each year. Today, several thousands of movies are released worldwide each year and they represent an unnegligable cultural vector. Movies are an important instrument in the soft power toolbox. Thus, we came to ask ourselves this burning question: what is the influence of the movie industry around the world? </p>
-    </body>
-</html>
+<blockquote style="background-color: #48C561; color: white; border-left-color: #2F903F;">
+<p>
+Since what is considered as the first commercial cinematographic projection by Les Frères Lumière in Paris, December 1895, the movie industry has grown to be worth several tens of billions dollars. Dozens of studios were created, producing an increasing number of movies each year. Today, several thousands of movies are released worldwide each year and they represent an unnegligable cultural vector. Movies are an important instrument in the soft power toolbox. Thus, we came to ask ourselves this burning question: what is the influence of the movie industry around the world ?
+</p>
+</blockquote>
 
 Of course that is too grand a question to be answered with the tap of a finger. But nonetheless, we can try to focus on specific aspects of the movie industry, such as actors. Here's our attempt to collect some nuggets of information about the world of movies and actors in it.
 
@@ -32,7 +23,7 @@ Provided with this information, we excavate an underpinning structure of the mov
 
 Once we have our network, we can cluster actors in communities of strongly-related individuals using the Louvain algorithm. Then, the computed communities can be characterized to understand who gets to access the wider communities, how interconnected the communities are and lots of other fascinating questions. With the initial corpus, we got information on actors date of birth, movies they played in, genres, languages and countries of movies. To have a better understanding of the main communities, we decided to scrape additionnal information such as actors nationality and occupations. However, as scraping is a very time-consuming task, we decided to only apply it on the 20 most populated communities. 
 
->📽️ Let’s start our journey to explore the results ! </br>
+>📽️ Let’s start our journey to explore the results !
 Our quest : identifying and naming as much communities as we can
 
 
@@ -138,7 +129,7 @@ Community 18 for starters shows a very dense production in the 1910s.
 
 **insert plot of 18 mains characteristics.** 
 
->📽️ Achievement ! </br>
+>📽️ Achievement !
 You discovered community 18 : **The Dawn of American Cinema**
 
 It fades out quickly, lasting only aroud 35 years. This is why its main features are very representative of the first era of the cinema. Sadly, as you may remember from the Network and Communities description earlier, it was also the community performing the higher gender parity within its ranks. This is a bad omen concerning the gender equity of more contemporary communities. 
@@ -147,14 +138,14 @@ On the other hand, community 2 spans over a whole century.  We would expect the 
 
 *Community 2 discussion*
 
->📽️ Achievement ! </br>
+>📽️ Achievement !
 You discovered community 2 : **The Golden Oldies**
 
 Another short lived community is the number 11! Here the community is more recent, emerging in the 1980s. Looking at the differents features collected for this community, we discover that we are evolving in the world of japanize Anime movies. That is why it is such a recent community! 
 
 **insert plot of 11 mains characteristics.** 
 
->📽️ Achievement ! </br>
+>📽️ Achievement !
 You discovered community 11 : **The Anime Squad**
 
 
@@ -239,7 +230,6 @@ Here ends our guided tour exploring the network. If you want to explore deeper, 
 <p>
  <a href="/communities.html">
   <img src="https://www.computerhope.com/cdn/media/logo-200-gray.png">
-  click here
  </a>
 </p>
 
