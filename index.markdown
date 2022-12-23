@@ -48,7 +48,7 @@ As the network is big, the graph is a bit heavy to render correctly... you will 
 
 You can move into the graph with your mouse (trackpad isn't recommended if you want to keep your nerves). Every node color represent a community and you will find more info if you pass your mouse over the node.
 
-This graph only shows the 20 first communities, but you <a href="3d-JS-Network/graph_complete.html">here is a graph of every nodes.</a> Furthermore you will be able to select which community to show, color by nationality or by actor's year of birth (you definitly wants to see that, heaven if it's a bit long to charge).
+This graph only shows the 20 first communities, but you <a href="3d-JS-Network/graph_complete.html">here is a graph of every nodes.</a> Furthermore you will be able to select which community to show, color by nationality or by actor's year of birth (you definitly wants to see that, even if it's a bit long to charge).
 
 The network data includes 8 427 actors. 
 
@@ -61,7 +61,7 @@ It stars 646 communities in total, ranging from 1080 to 2 individuals. The commu
 
 {% include community_sizes_scatter.html %}
 
-From the interactive visualisation above, it seems that the bigger communities present interconnections with each other, while the all the smallest ones are satellites completely isolated from the center of the pack. Those small satellites probably each concern only one movie and its actors and are disconnected from the mainstream movie industy. 
+From the interactive visualisation above, it seems that the bigger communities present interconnections with each other, while the all the smallest ones are satellites completely isolated from the center of the pack. Those small satellites probably each concern independent movies and their actors and are disconnected from the mainstream movie industy. 
 
 For the rest of this analysis, we will only investigate the 20 main communities, as those were the ones we fetched additionnal data for. The 20 most populated communities add up to a total of 6077 actors (72% of the total number of actors in the network) who played in 27 242 movies (33% of the total number of movies included in the CMU dataset).
 
@@ -247,7 +247,7 @@ Still, we can identify features of the communities. Community 6 relates to Marti
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
 📽️  Achievement unlocked ! <br>
-You discovered a new community : <b>The Chinese Combatants</b>
+You discovered community 6: <b>The Chinese Combatants</b>
 </p>
 </blockquote>
 Let’s see what else the genre appearence matrix can help us discover. Community 7 mainly features Family Film and Animation. Mainly originating from the US, this community includes Disney and others. 
@@ -255,7 +255,7 @@ Let’s see what else the genre appearence matrix can help us discover. Communit
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
 📽️  Achievement unlocked ! <br>
-You discovered a new community : <b>The Cartoon Connoisseurs</b>
+You discovered community 7: <b>The Cartoon Connoisseurs</b>
 </p>
 </blockquote>
 
@@ -264,7 +264,7 @@ On the bottom of the genre appearance matrix, an unknown genre label appears : S
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
 📽️  Achievement unlocked ! <br>
-You discovered a new community : <b>The Slapstick Comedians</b>
+You discovered community 17: <b>The Slapstick Comedians</b>
 </p>
 </blockquote>
 
