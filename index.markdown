@@ -8,7 +8,20 @@ title:
 
 {% include title.html %}
 
-Since what is considered as the first commercial cinematographic projection by Les Frères Lumière in Paris, December 1895, the movie industry has grown to be worth several tens of billions dollars. Dozens of studios were created, producing an increasing number of movies each year. Today, several thousands of movies are released worldwide each year and they represent an unnegligable cultural vector. Movies are an important instrument in the soft power toolbox. Thus, we came to ask ourselves this burning question: what is the influence of the movie industry around the world? 
+<html lang="en">
+    <head>
+        <style>
+            #p1 {
+                background-color: gray;
+                padding-left: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="p1">
+            Since what is considered as the first commercial cinematographic projection by Les Frères Lumière in Paris, December 1895, the movie industry has grown to be worth several tens of billions dollars. Dozens of studios were created, producing an increasing number of movies each year. Today, several thousands of movies are released worldwide each year and they represent an unnegligable cultural vector. Movies are an important instrument in the soft power toolbox. Thus, we came to ask ourselves this burning question: what is the influence of the movie industry around the world? </p>
+    </body>
+</html>
 
 Of course that is too grand a question to be answered with the tap of a finger. But nonetheless, we can try to focus on specific aspects of the movie industry, such as actors. Here's our attempt to collect some nuggets of information about the world of movies and actors in it.
 
