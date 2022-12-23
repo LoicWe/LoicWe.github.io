@@ -87,7 +87,8 @@ Concerning **occupation**, the three most recurring occupations concern less tha
 
 ### Communities intra and interrelationships
 
-The whole visualisation containing all the 8000 datapoints is quite messy and hard to read. But the world of data visualisation is well made and we can easily manage to highlight how the 20 most prominent communities interact with each other. 
+The whole visualisation containing all the 8000 datapoints is quite messy and hard to read. We see that there may be some denser communities, some communitites that seem strongly connected with another and other that seem to not interact. How can we try to better visualise these characteristics? 
+Well, the world of data viz is well made and we can easily manage to highlight how the 20 most prominent communities interact with each other. On the graph below, you can see our 20 communities. The size of the sphere depicts the number of intralinks within a communinity, while the width of edges depicts the number of links between 2 communities. 
 
 <div id="graph-2">
     <style> body { margin: 0; } </style>
@@ -101,7 +102,9 @@ The whole visualisation containing all the 8000 datapoints is quite messy and ha
     </div>
 </div>
 
-An interesting structure appears : 15 communities seem highly interconnect, with the 1rst and the 2nd community at the center of the web. On the other hand, communities 3, 5 and 10 interact with each other but have no connections with the rest of the communities. And lastly, 2 remaining communities (namely number 11 and number 14) think they are better off alone and are not connected to anyone else.
+An interesting structure appears : 15 communities seem highly interconnect, with the 1rst and the 2nd community at the center of the web.
+
+On the other hand, communities 3, 5 and 10 interact with each other but have no connections with the rest of the communities. And lastly, 2 remaining communities (namely number 11 and number 14) think they are better off alone and are not connected to anyone else.
 
 Crossing this newfound information with the communities characterisation, we realise that the 3 connected communities are the 3 indian communities, and the 2 standalone ones both come from Japan ! 
 
@@ -114,7 +117,7 @@ Sooo, now that we have laid the stage, let's dig deeper on specific subjects. He
 
 Our dataset spans over more than a century. It contains movies as old as 1888 up to 2016 ! The Louvain algorithm clustered actors without having any information on the time dimension of the data. Let’s see how this information helps us interpret the network. 
 
-Insert map
+{% include Gapminder.html %}
 
 The first communities to appear in time are the 2nd, 16th and 18th ones in 1908. On the map, they all appear in the United States. That is an interrogating observation since in the late 19th and beginning of the 20th century, we know that the european film industry (and especially the French one) was dominating. Even when looking at the first movies produced in each community, we see that 2,16 and 18 solely originate from the U.S.A. 
 
@@ -131,7 +134,7 @@ Movies not appearing in the network
 -movie 1
 -movie 2
 
-The map described the community size accumulated over the years. Let’s now take a look at  a yearly distribution of movies in the communities. 
+The map described the community size accumulated over the years. Let’s now take a look at a yearly distribution of movies in the communities. 
 
 {% include movies_time_dist.html %}
 
@@ -148,7 +151,9 @@ This community fades out quickly, lasting only aroud 35 years. This is why its m
 
 On the other hand, community 2 spans over a whole century.  We would expect the community to evolve over time (for example transitionning from black and white to color technologies). Contrary to community 18, it did perform badly in terms of gender parity, but maybe there is an improvement with time? 
 
-*Community 2 discussion*
+{% include gender_2.html %}
+
+Well, provided with the gender ratios over time, we don't really know wether the gender parity improved over time or not. There is a high variance between the years. To see wether there are so underlying tendencies, we tried fitting a regression line on the data, but in resulted in a flat line which didn't explain the variance (R^2 = 0.006). So there doesn't seem to be an increasing tendency over the whole century. However, we can see that since the 2000s the parity is more stable. 
 
 <blockquote style="background-color: #EC7B7B; color: white; border-left-color: #821718; text-align: justify; padding: 5px 10px 7px 15px">
 <p>
@@ -298,7 +303,7 @@ Humans can be actors, but why could animals not be ! In the network, some actors
 
 - the Firefighter
 
-Sometimes when acting, you have to really become the personna you’re playing. Hence why Steve Buscemi from community 1 is also a firefighter. Loic was very happy to know that he could have a career in the movie industry. 
+Sometimes when acting, you have to really become the personna you’re playing. Hence why Steve Buscemi from community 1 is also a firefighter. Loïc was very happy to know that he could have a career in the movie industry. 
 
 *Hints to find him : it's an US actor born in 1857*
 
