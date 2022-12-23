@@ -147,13 +147,8 @@ You discovered community 2 : **The Golden Oldies**
 
 Another short lived community is the number 11! Here the community is more recent, emerging in the 1980s. Looking at the differents features collected for this community, we discover that we are evolving in the world of japanize Anime movies. That is why it is such a recent community! 
 
-<<<<<<< HEAD
-**insert plot of 11 mains characteristics.** 
 
 >📽️ Achievement !
-=======
->📽️ Achievement ! </br>
->>>>>>> 0a1918b510a1df0bc945ddc5d46f7cbe5ce02d7a
 You discovered community 11 : **The Anime Squad**
 
 
@@ -236,15 +231,8 @@ Here ends our guided tour exploring the network. If you want to explore deeper, 
 
 ## Conclusion 
 
-<<<<<<< HEAD
-<p>
- <a href="/communities.html">
-  <img src="https://www.computerhope.com/cdn/media/logo-200-gray.png">
- </a>
-</p>
-=======
 To conclude, based on the analysis performed on a database of actors and movies, we observed that clusters of actors are mainly cristallized over shared country and language spoken. Additionnal relevant features were genre and time distribution.
->>>>>>> 0a1918b510a1df0bc945ddc5d46f7cbe5ce02d7a
+
 
 This analysis demonstrates again the power of algorithmic tools, which by simply clustering actors by costarred movies helped us make sense of the data and identify the main cinematographic movements and industries. 
 
