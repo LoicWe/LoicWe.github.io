@@ -172,7 +172,7 @@ Malayalam, Telugu and Tamil Cinema are all a part of the Cinema of South India.
 
 The dataset provides over 300 genre labels. Let’s see how this information can help us identify communities. To make the information more readable, we only observe the 5 most recurring genres in each community, and their % of appearence within the movies of said community. 
 
-{% include movies_genre_matrix.html %}
+{% include movies_genres_matrix.html %}
 
 First observation : the mainstream genres, such as *drama, comedy, romance, thriller, action* are too widely used and will be of no help in identifying specificities communities. 
 
