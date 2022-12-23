@@ -48,7 +48,7 @@ As the network is big, the graph is a bit heavy to render correctly... you will 
 
 You can move into the graph with your mouse (trackpad isn't recommended if you want to keep your nerves). Every node color represent a community and you will find more info if you pass your mouse over the node.
 
-This graph only shows the 20 first communities, but you <a href="3d-JS-Network/graph_complete.html">here is a graph of every nodes</a>. Furthermore you will be able to select which community to show, color by nationality or by actor's year of birth (you definitly wants to see that, heaven if it's a bit long to charge).
+This graph only shows the 20 first communities, but you <a href="3d-JS-Network/graph_complete.html">here is a graph of every nodes.</a> Furthermore you will be able to select which community to show, color by nationality or by actor's year of birth (you definitly wants to see that, heaven if it's a bit long to charge).
 
 The network data includes 8 427 actors. 
 
@@ -105,7 +105,7 @@ An interesting structure appears : 15 communities seem highly interconnect, with
 
 On the other hand, communities 3, 5 and 10 interact with each other but have no connections with the rest of the communities. And lastly, 2 remaining communities (namely number 11 and number 14) think they are better off alone and are not connected to anyone else.
 
-Crossing this newfound information with the communities characterisation, we realise that the 3 connected communities are the 3 indian communities, and the 2 standalone ones both come from Japan ! 
+Crossing this newfound information with the communities characterisation, we realise that the 3 connected communities are the 3 indian communities, and the 2 standalone ones both come from Japan!
 
 
 ## A deeper investigation on selected topics

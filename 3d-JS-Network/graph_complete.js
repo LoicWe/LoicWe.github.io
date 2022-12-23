@@ -24,14 +24,10 @@ const communityColor = {
 }
 
 const genderColor = {
-  "M": 'blue',
-  'F': 'pink',
+  "M": '#3E4E58',
+  'F': '#e97030',
   NaN: 'grey',
 }
-
-
-
-
 
 const nationalityColor = {
   'United States of America': '#FF8E43', //coral
