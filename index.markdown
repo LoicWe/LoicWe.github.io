@@ -50,20 +50,20 @@ You can move into the graph with your mouse (trackpad isn't recommended if you w
 
 This graph only shows the 20 first communities, but you <a href="3d-JS-Network/graph_complete.html">here is a graph of every nodes</a>. Furthermore you will be able to select which community to show, color by nationality or by actor's year of birth (you definitly wants to see that, heaven if it's a bit long to charge).
 
-The network data includes 8 427 actors who played overall in xxxxx(less than 81 741 and more than 27 242) movies. 
+The network data includes 8 427 actors. 
 
 As is usual in most real-world networks, the network is very sparse. Only 0.03% of all possible links between actors are present.  
 
 *Number of nodes:  8427 <br />
 Number of edges:  25865*
 
-It stars 645 communities in total, ranging from 1080 to 2 individuals. The community sizes distribution follows a power-law distribution and only the 14 widest communities contain more than a hundred actors.
+It stars 646 communities in total, ranging from 1080 to 2 individuals. The community sizes distribution follows a power-law distribution and only the 14 widest communities contain more than a hundred actors.
 
 {% include community_sizes_scatter.html %}
 
 From the interactive visualisation above, it seems that the bigger communities present interconnections with each other, while the all the smallest ones are satellites completely isolated from the center of the pack. Those small satellites probably each concern only one movie and its actors and are disconnected from the mainstream movie industy. 
 
-For the rest of this analysis, we will only investigate the 20 main communities, as those were the ones we fetched additionnal data for. The 20 most populated communities add up to a total of 6172 actors (73% of the total number of actors in the network) who played in 27 242 movies (33% of the total number of movies included in the CMU dataset).
+For the rest of this analysis, we will only investigate the 20 main communities, as those were the ones we fetched additionnal data for. The 20 most populated communities add up to a total of 6077 actors (72% of the total number of actors in the network) who played in 27 242 movies (33% of the total number of movies included in the CMU dataset).
 
 To analyse the communities, we will look at the actors contained within the community but also the movies represented within the community. A movie is considered as part of a community if at least two actors within the community have played in the movie. This means that a single movie can be part of multiple communities.
 
@@ -271,7 +271,7 @@ You discovered a new community : <b>The Slapstick Comedians</b>
 
 ### A Summary of Communities Description
 
-Here ends our guided tour exploring the network. If you want to explore deeper, you can find the summary of all mentionned communities and more here. 
+Here ends our guided tour exploring the network. If you want to explore deeper, you can find the summary of all mentionned communities and more <a href="/communities.html">here.</a> 
 
 ## Conclusion 
 
@@ -307,6 +307,6 @@ Sometimes when acting, you have to really become the personna you’re playing. 
 
 <p>
  <a href="/communities.html">
-  <img src="https://www.computerhope.com/cdn/media/logo-200-gray.png" width="300" style="display: block; margin-left: auto; margin-right: auto"/>
+  <img src="assets/images/Artboard1_1.svg" onmouseover="this.src='assets/images/Artboard1.svg'" width="600" style="display: block; margin-left: auto; margin-right: auto"/>
  </a>
 </p>
