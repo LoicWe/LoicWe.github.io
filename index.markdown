@@ -123,25 +123,29 @@ Insert map
 
 The first communities to appear in time are the 2nd, 16th and 18th ones in 1908. On the map, they all appear in the United States. That is an interrogating observation since in the late 19th and beginning of the 20th century, we know that the european film industry (and especially the French one) was dominating. Even when looking at the first movies produced in each community, we see that 2,16 and 18 solely originate from the U.S.A. 
 
-include table or movies 2,16,18. 
+Examples of movies from 2, 16 and 18 communities in their early age : 
+-The Call of the Wild, 1908, USA
+-The Sealed Room, 1909, USA
+-In Little Italy, 1909, USA
+-Flames and Fortune, 1911, USA
 
-*Why is that ?*
-*One explanation would be the lack of data. Indeed, before the 1910s, crediting the actors was not a widespread habit. As our analysis relies a network based on actors, movies with no actors mentionned simply don’t appear.*
+>Why is that ?
+>One explanation would be the lack of data. Indeed, before the 1910s, crediting the actors was not a widespread habit. As our analysis relies a network based on actors, movies with no actors mentionned simply don’t appear.
 
-**Example of movies with no actors** 
+Movies not appearing in the network
+-movie 1
+-movie 2
 
 The map described the community size accumulated over the years. Let’s now take a look at  a yearly distribution of movies in the communities. 
 
 {% include movies_time_dist.html %}
 
-Community 18 for starters shows a very dense production in the 1910s. 
-
-**insert plot of 18 mains characteristics.** 
+Community 18 for starters shows a very dense production in the 1910s. Movies included are U.S. silent, black and white short films featuring actors such as Charlotte Burton or Harry von Meter. 
 
 >📽️ Achievement ! </br>
 You discovered community 18 : **The Dawn of American Cinema**
 
-It fades out quickly, lasting only aroud 35 years. This is why its main features are very representative of the first era of the cinema. Sadly, as you may remember from the Network and Communities description earlier, it was also the community performing the higher gender parity within its ranks. This is a bad omen concerning the gender equity of more contemporary communities. 
+This community fades out quickly, lasting only aroud 35 years. This is why its main features are very representative of the first era of the cinema. Sadly, as you may remember from the Network and Communities description earlier, it was also the community performing the higher gender parity within its ranks. This is a bad omen concerning the gender equity of more contemporary communities. 
 
 On the other hand, community 2 spans over a whole century.  We would expect the community to evolve over time (for example transitionning from black and white to color technologies). Contrary to community 18, it did perform badly in terms of gender parity, but maybe there is an improvement with time? 
 
@@ -151,8 +155,6 @@ On the other hand, community 2 spans over a whole century.  We would expect the 
 You discovered community 2 : **The Golden Oldies**
 
 Another short lived community is the number 11! Here the community is more recent, emerging in the 1980s. Looking at the differents features collected for this community, we discover that we are evolving in the world of japanize Anime movies. That is why it is such a recent community! 
-
-**insert plot of 11 mains characteristics.** 
 
 >📽️ Achievement ! </br>
 You discovered community 11 : **The Anime Squad**
@@ -233,8 +235,38 @@ You discovered a new community : **The Slapstick Comedians**
 
 ### A Summary of Communities Description
 
-Here ends our guided tour exploring the network. If you want to explore deeper, you can find the summary of all mentionned communities and more here.
+Here ends our guided tour exploring the network. If you want to explore deeper, you can find the summary of all mentionned communities and more here. 
 
+## Conclusion 
+
+To conclude, based on the analysis performed on a database of actors and movies, we observed that clusters of actors are mainly cristallized over shared country and language spoken. Additionnal relevant features were genre and time distribution.
+
+This analysis demonstrates again the power of algorithmic tools, which by simply clustering actors by costarred movies helped us make sense of the data and identify the main cinematographic movements and industries. 
+
+Of course this approach does not exhaustively describes the movie industry as it comprises lots of other elements than just actors, such as people behind the camera, financials, etc. Also, let’s not forget that the dataset contains information up to 2011. It could be very relevant to try and perform an analogous study with more recent data, to uncover the changes in the last decade.
+
+
+## Additionnal Game : Cherchez Charlie
+
+The network contains plentiful of hidden gems, will you be able to spot them is the data visualisation ? 
+
+- Charlie Chaplin
+
+No introductions needed, he is one of the marking figures of the Silent Era. Chaplin was most known for his personna The Tramp, with his bowl hat, large shoes and cane! You can find him in the community 16. 
+
+- Alice Guy Blaché
+
+Here’s a incredible person! Alice Guy was a French pioneer film producer, and the first woman to ever direct a movie. She was very early convinced of the narrative potential of filming, at the time an emerging technology. She then emigrated to the USA, where she cofounded her own studios, Solax Studios. In the database that we analysed, some of her movies are present, such as the very first one, La Fée aux Choux. Alice can be found in the network but she wasn’t clustered to one of the 20 most populated communities, so you’ll have to look into the smaller communities. 
+
+- Trigger, Pal, Skippy and Cheeta
+
+Humans can be actors, but why could animals not be ! In the network, some actors are animals, such as Pal and Skippy the dogs, Trigger the horse, and Cheeta the chimpanzee sidekick of Tarzan. They all are a part of community 2 : **The Golden Oldies.**
+
+- the Firefighter
+
+Sometimes when acting, you have to really become the personna you’re playing. Hence why Steve Buscemi from community 1 is also a firefighter. Loic was very happy to know that he could have a career in the movie industry. 
+
+*Hints to find him : it's an US actor born in 1857*
 
 <p>
  <a href="/communities.html">
@@ -242,23 +274,3 @@ Here ends our guided tour exploring the network. If you want to explore deeper, 
   click here
  </a>
 </p>
-
-## Conclusion 
-
-
-
-# Bibliography
-
-- February 2015 : Goldenberg, S. & Roberts, D. Obama rejects Keystone XL pipeline and hails US as leader on climate change. The Guardian (2015).
-- May 2015 : Gambino, L. Barack Obama: climate deniers pose serious threat to US security. The Guardian (2015).
-- August 2015 : 2015 State of the Climate: Sea Level NOAA Climate.gov. [https://www.climate.gov/news-features/featured-images/2015-state-climate-sea-level](https://www.climate.gov/news-features/featured-images/2015-state-climate-sea-level).
-- December 2015 : World Climate Summit 2015. Cop21 [https://cop21.org/](https://cop21.org/).
-- March 2016 : Trans-Pacific Partnership. Wikipedia (2021).
-- April 2016 : Quotebank quote
-- June 2017 : Statement by President Trump on the Paris Climate Accord – The White House. [https://trumpwhitehouse.archives.gov/briefings-statements/statement-president-trump-paris-climate-accord/](https://trumpwhitehouse.archives.gov/briefings-statements/statement-president-trump-paris-climate-accord/).
-- March 2018 : International Solar Alliance and India - OBJECTIVE IAS. [https://objectiveias.in/international-solar-alliance-and-india/](https://objectiveias.in/international-solar-alliance-and-india/) (2018).
-- August 2018 : 2018 California wildfires. Wikipedia (2021).
-- March 2019 : School Strike for Climate. Wikipedia (2021).
-- August 2019 : 2019 Amazon rainforest wildfires. Wikipedia (2021).
-- September 2019 : September 2019 climate strikes. Wikipedia (2021).
-- January 2020 : 2019–20 Australian bushfire season. Wikipedia (2021).
